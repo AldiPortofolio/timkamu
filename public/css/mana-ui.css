@@ -1,0 +1,1063 @@
+/*---------------------------------------------
+-----------------------------------------------
+Mana UI version 1
+Made by Ferdian Jahja (@fjahja) for Timkamu.com
+-----------------------------------------------
+----------------------------------------------*/
+
+/*layers*/
+.sunray {z-index: 50;}
+.clouds {z-index: 60;}
+
+.top-left-blobs,
+.top-right-blobs,
+.bottom-left-blobs,
+.bottom-right-blobs {z-index: 70;}
+
+.parts,
+#page-content,
+#page-footer {z-index: 100;}
+
+.hero-overlay,
+.lp-exp-gained-bar,
+.quest-exp-gained-bar {z-index: 150;}
+.hero-texts,
+.lp-exp-stats,
+.quest-exp-stats {z-index: 155;}
+
+#nav .logo,
+#nav .survey-menu-button,
+#nav .mobile-menu-button,
+#nav .video-menu-button {z-index: 200;}
+
+#scrolled-nav .scrolled-survey-btn,
+#scrolled-nav .scrolled-match-btn,
+#scrolled-nav .scrolled-menu-btn,
+#scrolled-nav .scrolled-quest-btn {z-index: 210;}
+
+.site-overlay {z-index: 250;}
+
+#nav-tray,
+#match-info,
+#event-category,
+#games-tray {z-index: 280;}
+.nav-tray-close,
+.games-nav-tray-close,
+.tray-close-top,
+.tray-close-top-category,
+.nav-tray-profile-link {z-index: 285;}
+
+.modal-effects {z-index: 300;}
+.modal-about,
+.modal-mid,
+.modal-actions,
+.mana-ui-modal-close {z-index: 400;}
+.modal.profile-snap-modal .modal-content {
+	padding-bottom: 20px !important;
+}
+
+/*money displays*/
+.money {font-family: 'poetsenone-reg';}
+.money img {
+	width: 15px;
+    position: relative;
+    top: -1px;
+}
+
+/*money variations*/
+.money.left img {margin-right: 5px;}
+.money.right img {margin-left: 5px;}
+.money-14 {font-size: 14px;}
+.money-16 {font-size: 16px;}
+.money-inline {margin: 0 3px;}
+
+/*utilities*/
+.o1 {opacity: 0.1;}
+.o2 {opacity: 0.2;}
+.o3 {opacity: 0.3;}
+.o4 {opacity: 0.4;}
+.o5 {opacity: 0.5;}
+.o6 {opacity: 0.6;}
+.o7 {opacity: 0.7;}
+.o8 {opacity: 0.8;}
+.o9 {opacity: 0.9;}
+.o10 {opacity: 1;}
+
+.mb-10 {margin-bottom: 10px;}
+.mb-15 {margin-bottom: 15px;}
+.mb-20 {margin-bottom: 20px;}
+.mb-25 {margin-bottom: 25px;}
+.mb-30 {margin-bottom: 30px;}
+.mb-40 {margin-bottom: 40px;}
+.mb-50 {margin-bottom: 50px;}
+
+.mt-10 {margin-top: 10px;}
+.mt-15 {margin-top: 15px;}
+.mt-20 {margin-top: 20px;}
+.mt-25 {margin-top: 25px;}
+.mt-30 {margin-top: 30px;}
+.mt-40 {margin-top: 40px;}
+.mt-50 {margin-top: 50px;}
+
+.bd10 {border-radius: 10px;}
+.bd20 {border-radius: 20px;}
+.bd50 {border-radius: 50px;}
+
+.top-m1 {top: -1px !important;}
+.top-m2 {top: -2px !important;}
+.top-m3 {top: -3px !important;}
+.top-m4 {top: -4px !important;}
+.top-m5 {top: -5px !important;}
+
+.top-0 {top: 0px !important;}
+.top-1 {top: 1px !important;}
+.top-2 {top: 2px !important;}
+.top-3 {top: 3px !important;}
+.top-4 {top: 4px !important;}
+.top-5 {top: 5px !important;}
+
+.bottom-1 {bottom: 1px;}
+.bottom-2 {bottom: 2px;}
+.bottom-3 {bottom: 3px;}
+.bottom-4 {bottom: 4px;}
+.bottom-5 {bottom: 5px;}
+.bottom-6 {bottom: 6px;}
+.bottom-7 {bottom: 7px;}
+.bottom-8 {bottom: 8px;}
+.bottom-9 {bottom: 9px;}
+.bottom-10 {bottom: 10px;}
+
+.p5030 {padding: 50px 30px;}
+
+.w-50 {width: 50% !important;}
+.w-60 {width: 60% !important;}
+.w-70 {width: 70% !important;}
+.w-80 {width: 80% !important;}
+.w-90 {width: 90% !important;}
+
+.cursor-ptr {cursor: pointer;}
+
+.scale-onclick {transition: all 0.1s ease-in-out;}
+.scale-onclick:active {transform: scale(1.05) !important;}
+
+
+/*currency icons*/
+.icon.cur16 {
+	width: 16px;
+	position: relative;
+	top: -2px;
+}
+.icon.cur16.cur-right {
+	margin-left: 6px;
+}
+.mdl-curr {
+    width: 16px;
+    position: relative;
+    top: -1px;
+}
+
+
+/*backgrounds*/
+/*white bg*/
+.bg25510 {background: rgb(255 255 255 / 0.1);}
+.bg25520 {background: rgb(255 255 255 / 0.2);}
+.bg25590 {background: rgb(255 255 255 / 0.9);}
+.bg255100 {background: rgb(255 255 255 / 1);}
+/*black bg*/
+.bg010 {background: rgb(0 0 0 / 10%);}
+.bg020 {background: rgb(0 0 0 / 20%);}
+.bg030 {background: rgb(0 0 0 / 30%);}
+.bg040 {background: rgb(0 0 0 / 40%);}
+/*red bg*/
+.bg2333390 {background: rgb(233 33 90 / 100%);}
+.bg233339030 {background: rgb(233 33 90 / 30%);}
+.bg233339075 {background: rgb(233 33 90 / 75%);}
+/*purple bg*/
+.bg8345168 {background: rgb(81 45 168 / 100%);}
+
+/*spinner toggles*/
+.has-spinner .default-text {display: block !important;}
+.has-spinner .spinner-border {display: none !important;}
+.loading .spinner-border {display: block !important;}
+.loading .default-text {display: none !important;}
+.spinner-border.hw24 {
+	height: 24px;
+	width: 24px;
+}
+
+/*forms*/
+.form-control.mana-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(255 255 255 / .3);
+  opacity: 1; /* Firefox */
+}
+
+.form-control.mana-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(255 255 255 / .3);
+}
+
+.form-control.mana-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(255 255 255 / .3);
+}
+input.form-control.mana-control {
+	height: 48px;
+	padding: 15px;
+	border: 0px;
+	border-radius: 10px;
+	background: rgb(255 255 255 / 10%);
+	color: rgb(255 255 255 / 90%);
+}
+.mana-btn-54 {
+	padding: 0 15px;
+    font-weight: 700;
+    line-height: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.mana-btn-red {
+	background: rgb(233 33 90 / 100%);
+	color: rgb(255 255 255 / 90%);
+}
+.mana-btn-red:hover {
+	background: rgb(236 28 87 / 100%);
+	color: rgb(255 255 255 / 100%);
+}
+.mana-btn-opaque {
+	background: rgb(255 255 255 / 10%);
+	color: rgb(255 255 255 / 90%);
+}
+.mana-btn-opaque:hover {
+	background: rgb(255 255 255 / 15%);
+	color: rgb(255 255 255 / 100%);
+}
+.mana-btn-transparent {
+	color: rgb(255 255 255 / 90%);
+}
+.mana-btn-transparent:hover {
+	background: rgb(255 255 255 / 10%);
+	color: rgb(255 255 255 / 100%);
+}
+
+/*effects*/
+.site-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgb(0 0 0 / 80%);
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.site-overlay.active {
+	display: block;
+}
+.sunray {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-image: radial-gradient(rgb(74 39 93 / 50%), rgb(69 23 111 / 0%));
+}
+.top-left-blobs {
+	width: 600px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.top-right-blobs {
+	width: 250px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.bottom-left-blobs {
+	width: 400px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.bottom-right-blobs {
+	width: 600px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.clouds {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+@media (max-width: 900px) {
+    .top-left-blobs {width: 60%;}
+    .top-right-blobs {width: 25%;}
+    .bottom-left-blobs {width: 20%;}
+    .bottom-right-blobs {width: 75%;}
+}
+@media (max-width: 700px) {
+    .top-left-blobs {width: 80%;}
+    .top-right-blobs {width: 10%;}
+    .bottom-left-blobs {width: 25%;}
+    .bottom-right-blobs {width: 65%;}
+}
+
+/*modals*/
+.modal-backdrop.show {opacity: 0.85 !important;}
+.modal.mana-ui .modal-content {
+	border-radius: 20px;
+	background-color: #26184D;
+	border: 0px;
+	padding: 70px 30px 60px 30px;
+	overflow: hidden;
+}
+.modal.mana-ui .modal-about {
+	margin-bottom: 25px;
+	line-height: 38px;
+}
+.modal.mana-ui .modal-about.no-mb {
+	margin-bottom: 0px;
+}
+.modal-about-meta {
+	margin-bottom: 25px;
+}
+.modal.mana-ui .modal-mid {
+	margin-bottom: 30px;
+}
+.modal.mana-ui .modal-actions .primary,
+.modal.mana-ui .modal-actions .secondary {
+	width: 100%;
+	padding: 15px;
+	font-weight: 700;
+}
+.modal.mana-ui .modal-actions a + a {
+	margin-top: 15px;
+}
+.modal-top-right-blobs {
+	width: 70%;
+	top: 0;
+	position: absolute;
+	right: 0;
+}
+.modal-bottom-right-blobs {
+	width: 70%;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    opacity: 0.5;
+}
+.mana-ui-modal-close {
+    right: 30px;
+    top: 25px;
+    width: 26px;
+    opacity: 0.3;
+    position: absolute;
+    cursor: pointer;
+}
+.mana-ui-modal-close:hover {
+    opacity: 0.9;
+}
+.modal.mana-ui.slim-card .modal-content {
+	padding: 40px 30px 40px 30px;
+}
+.modal.mana-ui.slim-card .mana-ui-modal-close {
+	display: none;
+}
+.modal-alt-close {
+	margin-bottom: -30px;
+	cursor: pointer;
+}
+.modal.mana-ui.nothing .modal-content {
+	padding: 0;
+	padding-bottom: 80px;
+	background: transparent;
+	border-radius: 0px;
+}
+.modal-about-meta-link {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 16px;
+	font-family: 'Nunito', sans-serif;
+}
+.modal-info-group {
+	margin-left: -5px;
+    margin-right: -5px;
+}
+
+/*page typography*/
+@font-face{
+	font-family: 'Rajdhani-Bold';
+	src: url('../fonts/Rajdhani-Bold.ttf');
+}
+@font-face{
+	font-family: 'poetsenone-reg';
+	src: url('../fonts/Poetsenone-regular.ttf');
+}
+.rajdhani-bold {font-family:'Rajdhani-Bold';}
+.poetsenone-reg {font-family:'poetsenone-reg';}
+
+.font-size-10 {font-size: 10px;}
+.font-size-11 {font-size: 11px;}
+.font-size-12 {font-size: 12px;}
+.font-size-13 {font-size: 13px;}
+.font-size-14 {font-size: 14px;}
+.font-size-15 {font-size: 15px;}
+.font-size-16 {font-size: 16px;}
+.font-size-17 {font-size: 17px;}
+.font-size-18 {font-size: 18px;}
+.font-size-19 {font-size: 19px;}
+.font-size-20 {font-size: 20px;}
+.font-size-21 {font-size: 21px;}
+.font-size-22 {font-size: 22px;}
+.font-size-23 {font-size: 23px;}
+.font-size-24 {font-size: 24px;}
+.font-size-25 {font-size: 25px;}
+.font-size-26 {font-size: 26px;}
+.font-size-27 {font-size: 27px;}
+.font-size-28 {font-size: 28px;}
+.font-size-29 {font-size: 29px;}
+.font-size-30 {font-size: 30px;}
+.font-size-31 {font-size: 31px;}
+.font-size-32 {font-size: 32px;}
+
+.fw-100 {font-weight: 100;}
+.fw-200 {font-weight: 200;}
+.fw-300 {font-weight: 300;}
+.fw-400 {font-weight: 400;}
+.fw-500 {font-weight: 500;}
+.fw-600 {font-weight: 600;}
+.fw-700 {font-weight: 700;}
+.fw-800 {font-weight: 800;}
+
+.text-italic {font-style: italic;}
+
+.white-09 {color: rgb(255 255 255 / 0.9);}
+.white-10 {color: rgb(255 255 255 / 1);}
+
+.black-05 {color: rgb(0 0 0 / 0.5);}
+.black-06 {color: rgb(0 0 0 / 0.6);}
+.black-07 {color: rgb(0 0 0 / 0.7);}
+.black-08 {color: rgb(0 0 0 / 0.8);}
+.black-09 {color: rgb(0 0 0 / 0.9);}
+
+.grey-10 {color: #8b869e;} /*simulate white 0.9*/
+
+a {
+	color: rgb(255 255 255 / 90%) !important;
+	text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus,
+a:visited {
+	color: rgb(255 255 255 / 100%) !important;
+	text-decoration: none !important;
+	outline: none !important;
+}
+
+/*positioning utilities*/
+.top-translate-50 {
+	top: 50%;
+	transform: translate(0,-50%);
+}
+
+.row.space-10 {margin: 0 -10px;}
+.col-6.space-10 {padding: 0 10px;}
+
+.row.space-20 {margin: 0 -20px;}
+.col-3.space-20 {padding: 0 20px;}
+
+/*main*/
+html, body {
+	overflow-x: hidden !important;
+}
+html {
+    height: 100%;
+}
+body.mana-ui {
+	background: #26184D;
+	color: rgb(255 255 255 / 90%);
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	position: relative;
+	min-height: 100%;
+}
+#nav .logo {
+	width: 180px;
+	position: absolute;
+	top: 13px;
+	left: 13px;
+}
+#nav .mobile-menu-button {
+	width: 40px;
+	position: absolute;
+	right: 8px;
+	top: 14px;
+	opacity: 0.9;
+	transform: scaleX(-1);
+	padding: 5px;
+}
+#nav .video-menu-button {
+	width: 40px;
+	position: absolute;
+	right: 52px;
+	top: 14px;
+	opacity: 0.9;
+	padding: 5px;
+}
+#nav .survey-menu-button {
+	width: 40px;
+	position: absolute;
+	right: 96px;
+	top: 14px;
+	opacity: 0.9;
+	padding: 5px;
+}
+@media (min-width: 900px) {
+    #nav .logo {
+    	width: 200px;
+    	top: 20px;
+    	left: 25px;
+    }
+    #nav .mobile-menu-button {
+		right: 45px;
+		top: 24px;
+	}
+    #nav .video-menu-button {
+		right: 100px;
+		top: 24px;
+	}
+    #nav .survey-menu-button {
+		right: 155px;
+		top: 24px;
+	}
+}
+.nav-profile {
+	background: rgb(0 0 0 / 10%);
+	margin-bottom: 20px;
+}
+.nav-profile-inner {
+	padding: 70px 35px 25px 35px;
+}
+.nav-profile-rank {
+	height: 48px;
+	width: 48px;
+	position: absolute;
+	left: 30px;
+	top: 16px;
+	opacity: 1;
+}
+.nav-profile-vip {
+	height: 48px;
+	width: 48px;
+	position: absolute;
+	left: 90px;
+	top: 16px;
+	opacity: 1;
+}
+#page-content {
+	position: relative;
+	padding-top: 100px;
+}
+#page-title {
+	margin-bottom: 20px;
+}
+#page-footer {
+	margin-top: 50px;
+	position: relative;
+	padding-bottom: 150px;
+}
+body.no-menu #page-content {
+    padding-top: 70px;
+}
+body.no-menu #nav {
+    display: none;
+}
+
+/*css hacks*/
+.anti-jitter-spacer {
+	padding: 100px 0;
+}
+.force-height {
+	min-height: 700px;
+}
+
+/*event card*/
+.event-card:hover {
+	background: rgb(0 0 0 / 30%);
+}
+.event-card.past:hover {
+	background: rgb(255 255 255 / 20%);
+}
+.event-card {
+	margin-bottom: 20px;
+	cursor: pointer;
+	border-radius: 20px;
+	background: rgb(0 0 0 / 20%);
+}
+.event-card.live {
+	background: rgb(233 33 90 / 75%);
+}
+.event-card.live:hover {
+	background: rgb(233 33 90 / 90%)
+}
+.event-card.no-event, .match-card.no-event {
+	padding: 50px;
+}
+.event-card-meta {
+	padding: 12px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+.event-card-meta-date {
+	font-size: 16px;
+	font-weight: 800;
+}
+.event-card-meta-time {
+	position: absolute;
+	right: 20px;
+	font-family: 'Rajdhani-Bold';
+	opacity: 0.5;
+	font-size: 24px;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+.event-card-bottom-left,
+.event-card-bottom-right {
+	padding: 10px 20px;
+	line-height: 14px;
+	text-align: center;
+}
+.event-card-bottom-mid {
+	flex: 1 1 40% !important;
+}
+.event-card-bottom-right-teampic, .event-card-bottom-left-teampic {
+	width: 50px;
+	height: 50px;
+}
+.event-card-bottom-team-name {
+}
+.section-title-meta-link {
+	position: absolute;
+	right: 0;
+	bottom: 10%;
+	/*top: 50%;
+	transform: translate(0,-50%);*/
+}
+.event-card-meta-league {
+	font-size: 14px;
+	opacity: 0.5;
+	width: 80%;
+}
+
+/*in page exp*/
+.lp-exp-ranks-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.lp-exp-ranks-container > div {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	line-height: 40px;
+}
+.lp-exp-ranks-icon {
+	height: 40px;
+}
+.lp-exp-ranks-left {
+	justify-content: flex-start;
+}
+.lp-exp-ranks-right {
+	justify-content: flex-end;
+}
+.lp-exp-ranks-left .lp-exp-ranks-icon {
+	margin-right: 8px;
+}
+.lp-exp-ranks-right .lp-exp-ranks-icon {
+	margin-left: 8px;
+}
+.lp-exp-bg-bar {
+	position: relative;
+	border-radius: 20px;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	background: rgb(0 0 0 / 0.2);
+}
+.lp-exp-gained-bar {
+	background: rgb(233 30 99 / 1);
+	border-radius: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 40px;
+	line-height: 40px;
+}
+.lp-exp-stats {
+	font-family: 'poetsenone-reg';
+	font-size: 14px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*in page payment gateway*/
+.pg-icon {
+	height: 20px;
+}
+.pg-shelf-item-inner {
+	background: rgb(255 255 255 / 0.7);
+}
+.pg-shelf-item-inner > div {
+	flex: 1 1 50%;
+}
+.pg-shelf-container {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+.pg-shelf-item {
+	flex: 0 0 100%;
+	padding: 5px;
+	cursor: pointer;
+}
+.pg-shelf-item-inner {
+	display: flex!important;
+	flex: 1 1 50%;
+	line-height: 54px;
+	padding: 0 25px;
+}
+.pg-shelf-item:hover .pg-shelf-item-inner {
+	background: rgb(255 255 255 / 1);
+}
+.pg-shelf-item.active .pg-shelf-item-inner {
+	background: rgb(255 255 255 / 1);
+}
+.snap-rank {
+	position: absolute;
+    top: -12px;
+    right: 0;
+    width: 80px;
+    height: 80px;
+}
+.snap-stat-item {
+	flex: 1 1 33.33%;
+}
+.shop-tutup-notice {
+	min-height: 225px;
+}
+
+.odds-return-info {
+	line-height: 48px;
+	height: 48px;
+	padding: 0 20px;
+}
+.odds-return-info-right {
+	right: 20px;
+}
+.info-horizontal {
+	line-height: 54px;
+	height: 54px;
+	padding: 0 25px;
+	font-size: 14px;
+}
+.info-horizontal > div {
+}
+.info-horizontal-adds {
+	margin-right: 5px;
+}
+.info-horizontal-left {
+	flex: 1 1 50%;
+}
+.info-horizontal-right {
+	flex: 1 1 50%;
+}
+.info-horizontal.link {
+	cursor: pointer;
+}
+.system-msg-content-additional-message {
+	overflow-x: auto;
+}
+.quest-item {
+	border-radius: 20px;
+	background: rgb(0 0 0 / 0.2);
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 15px 20px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.quest-item .left,
+.quest-item .right {
+	display: flex;
+	align-items: center;
+}
+.quest-item .left {
+	flex: 1 1 70%;
+	padding-right: 10px;
+}
+.quest-item .right {
+	flex: 1 1 30%;
+}
+.quest-item .left.half,
+.quest-item .right.half {
+	flex: 1 1 50%;
+}
+.quest-item .quest-exp,
+.quest-item .lower {
+	flex: 0 0 100%;
+	display: flex;
+	align-items: center;
+}
+.quest-item .quest-exp {
+	margin: 10px 0;
+}
+.quest-item .lower {
+	opacity: 0.5;
+	font-style: italic;
+}
+.quest-item .right {
+	justify-content: flex-end;
+}
+.quest-item .money img {
+	top: 1px;
+}
+.quest-item.completed {
+	opacity: 0.5;
+}
+.quest-exp-bar {
+	position: relative;
+	border-radius: 20px;
+	height: 20px;
+	line-height: 20px;
+	width: 100%;
+	background: rgb(0 0 0 / 0.2);
+}
+.quest-exp-gained-bar {
+	background: rgb(233 30 99 / 1);
+	border-radius: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 20px;
+	line-height: 20px;
+	width: 0%;
+}
+.quest-exp-stats {
+	font-family: 'poetsenone-reg';
+	font-size: 12px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.quest-01 .quest-exp-gained-bar {width: 100%;}
+.quest-02 .quest-exp-gained-bar {width: 30%;}
+.quest-03 .quest-exp-gained-bar {width: 69%;}
+
+.event-index-filters {
+	margin-bottom: 20px;
+}
+.event-index-filter-select {
+	margin-bottom: 20px;
+}
+.event-index-filter-select.status {
+	margin-left: 20px;
+}
+.event-index-filter-select.month,
+.event-index-filter-select.status {
+	flex: 1;
+}
+.event-index-filter-select.game {
+	flex: 0 0 100%;
+}
+.event-index-filter-select .custom-select {
+	border-radius: 10px;
+	border: 0px;
+	background: url("../icons/chevron-down-white.svg") no-repeat right 14px center/14px 14px;
+	background-color: rgb(255 255 255 / 10%);
+	color: rgb(255 255 255 / 90%);
+	padding: 12px 40px 12px 12px;
+	height: unset;
+	position: relative;
+}
+.event-index-filter-select .custom-select option {
+	background-color: #42336E;
+}
+::selection {
+	background-color: #523A76;
+}
+.match-card {
+    background: rgb(0 0 0 / 0.2);
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+	position: relative;
+	display: none;
+}
+
+.match-card.active {
+	display: block;
+}
+.match-card:hover {
+    background: rgb(0 0 0 / 0.4);
+}
+.match-card.live {
+    background: rgb(233 30 99 / 0.3);
+}
+.match-card.live:hover {
+    background: rgb(233 30 99 / 0.4);
+}
+.match-card.past {
+    background: rgb(255 255 255 / 0.1);
+}
+.match-card.past:hover {
+    background: rgb(255 255 255 / 0.2);
+}
+.match-card .title {
+	padding: 12px 20px;
+	position: relative;
+}
+.match-card .title .middle {
+	padding-right: 75px;
+    padding-left: 50px;
+}
+.match-card .game-name {
+	font-weight: 800;
+}
+.match-card .vs-word {
+	opacity: .3;
+}
+.match-card .title-date {
+	text-align: right;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+.match-card .league-name {
+	opacity: .3;
+}
+.match-card .game-time {
+	opacity: .3;
+}
+.game-thumb {
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+.game-thumb img {
+	width: 100%;
+}
+.match-card .teams {
+    background: rgb(0 0 0 / 0.1);
+    border-radius: 20px;
+    display: flex;
+}
+.match-card .teams.many {
+    padding-left: 20px;
+}
+.match-card.live .teams {
+	background: rgb(233 30 99 / 0.3);
+}
+.match-card.past .teams {
+	background: rgb(255 255 255 / 0.1);
+}
+.match-card .teams .team-logo {
+    width: 50px;
+    height: 50px;
+}
+.match-card .teams .team-logo img {
+    width: 100%;
+}
+.match-card .teams .team-name {
+	font-family: 'Rajdhani-Bold';
+    text-align: center;
+	line-height: 14px;
+	font-size: 12px;
+}
+.match-card .team-container {
+			flex: 0 0 14%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 12px 20px;
+}
+.match-card .many .team-container {
+			flex: 1 0 14%;
+}
+.match-card .match-card-stats {
+	font-family: 'Rajdhani-Bold';
+	font-size: 20px;
+	padding: 12px 20px;
+    background: rgb(0 0 0 / 0.2);
+    border-radius: 20px;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 20px;
+    text-align: center;
+}
+.match-card.live .match-card-stats {
+	background: rgb(233 30 99 / 1);
+	font-size: 26px;
+}
+.match-card.past .match-card-stats {
+	background: rgb(255 255 255 / 0.1);
+	font-size: 26px;
+}
+.match-card .teams-more {
+	font-family: 'Rajdhani-Bold';
+	font-size: 20px;
+	padding: 12px 20px;
+    background: rgb(0 0 0 / 0.2);
+    border-radius: 20px;
+			flex: 1 0 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.match-card .teams.many .team-container {
+			padding: 12px 0px;
+}
+.match-card .teams-more {
+			flex: 1 1 50%;
+			padding: 12px 10px;
+	margin-left: 12px;
+}
+.match-card.live .teams-more {
+	background: rgb(233 30 99 / 1);
+}
+.match-card.past .teams-more {
+	background: rgb(255 255 255 / .1);
+}
+.pg-price.slashed {
+	line-height: initial;
+	flex-direction: column;
+}
+.pg-price.slashed .old {
+	opacity: .3;
+	text-decoration: line-through;
+}
+.vip-thumb {
+	width: 20%;
+    margin-left: -8px;
+    margin-bottom: -14px;
+    margin-top: -20px;
+}

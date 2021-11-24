@@ -1,0 +1,41 @@
+@font-face{font-family:'Roboto-Regular';src:url('../fonts/Roboto-Regular.ttf')}
+@font-face{font-family:'Roboto-Medium';src:url('../fonts/Roboto-Medium.ttf')}
+@font-face{font-family:'Roboto-Bold';src:url('../fonts/Roboto-Bold.ttf')}
+
+@font-face{font-family:'Rajdhani-Bold';src:url('../fonts/Rajdhani-Bold.ttf')}
+
+@font-face{font-family:'Segoe-UI';src:url('../fonts/Segoe-UI.ttf')}
+@font-face{font-family:'Segoe-UI-Bold';src:url('../fonts/Segoe-UI-Bold.ttf')}
+
+
+@font-face{
+	font-family:'Nunito Sans';
+	src:url('../fonts/NunitoSans-ExtraLight.ttf');
+	font-weight:100;
+}
+@font-face{
+	font-family:'Nunito Sans';
+	src:url('../fonts/NunitoSans-Regular.ttf');
+	font-weight:400;
+}
+@font-face{
+	font-family:'Nunito Sans';
+	src:url('../fonts/NunitoSans-SemiBold.ttf');
+	font-weight:600;
+}
+@font-face{
+	font-family:'Nunito Sans';
+	src:url('../fonts/NunitoSans-Bold.ttf');
+	font-weight:800;
+}
+
+.roboto-regular {font-family:'Roboto-Regular' !important;}
+.roboto-medium {font-family:'Roboto-Medium' !important;}
+.roboto-bold {font-family:'Roboto-Bold' !important;}
+
+.rajdhani-bold {font-family:'Rajdhani-Bold' !important;}
+
+.segoe-ui {font-family:'Segoe-UI' !important;}
+.segoe-ui-bold {font-family:'Segoe-UI-Bold' !important;}
+
+.nunito-sans {font-family: Nunito Sans ,sans-serif !important;}

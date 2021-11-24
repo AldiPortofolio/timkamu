@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 385 212" style="enable-background:new 0 0 385 212;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#XMLID_15_);}
+	.st1{opacity:0.3;}
+	.st2{clip-path:url(#XMLID_16_);fill:url(#XMLID_17_);}
+	.st3{opacity:0.3;fill:url(#XMLID_18_);}
+</style>
+<g id="XMLID_254_">
+	<defs>
+		<rect id="XMLID_253_" x="0" width="384.1" height="212.1"/>
+	</defs>
+	<clipPath id="XMLID_15_">
+		<use xlink:href="#XMLID_253_"  style="overflow:visible;"/>
+	</clipPath>
+	<g id="XMLID_236_" class="st0">
+		<g id="XMLID_245_" class="st1">
+			<defs>
+				<path id="XMLID_251_" class="st1" d="M-92,37.5c0,0,29.3,43.6,91.4,15.4C99.9,7,139.4,85.4,150.4,104.4
+					c39,62.4,69.4,49.7,111.4,44.2C364.2,134.5,380,213,380,213H-92V37.5z"/>
+			</defs>
+			<clipPath id="XMLID_16_">
+				<use xlink:href="#XMLID_251_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<linearGradient id="XMLID_17_" gradientUnits="userSpaceOnUse" x1="-79.1891" y1="-16186.7432" x2="-238.7346" y2="-16559.4219" gradientTransform="matrix(1 0 0 1 257.0475 16396.6172)">
+				<stop  offset="0" style="stop-color:#EC1866"/>
+				<stop  offset="1" style="stop-color:#033C62"/>
+			</linearGradient>
+			<rect id="XMLID_252_" x="-98" y="25.2" class="st2" width="478" height="197"/>
+		</g>
+		
+			<linearGradient id="XMLID_18_" gradientUnits="userSpaceOnUse" x1="-136.8828" y1="-16110.3672" x2="-282.9585" y2="-16448.0176" gradientTransform="matrix(1 0 0 1 257.0475 16396.6172)">
+			<stop  offset="0" style="stop-color:#EC1866"/>
+			<stop  offset="1" style="stop-color:#033C62"/>
+		</linearGradient>
+		<path id="XMLID_237_" class="st3" d="M-57.2,162.6c0,0,35.6-96.8,126.6-23.3c42.5,37.5,60.6,39.6,99.1,26.6s69.5,21.7,61.5,41.7
+			S174,223,174,223H-57.5L-57.2,162.6z"/>
+	</g>
+</g>
+</svg>

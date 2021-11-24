@@ -1,0 +1,41 @@
+body, html {
+	font-size: 12px;
+}
+#dataTable {
+	font-size: 12px;
+}
+.custom-select-sm {
+	font-size: 12px;
+}
+
+.table-detail tr td {
+	border: none;
+}
+
+.table-detail tr td span {
+	margin-right: 5px;
+	float: left !important;
+}
+
+.breadcrumb {
+	background: none;
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+
+.status-event {
+	color: black;
+}
+
+.status-event.upcoming {
+	background: yellow;
+}
+
+.status-event.live {
+	color: white;
+	background: rgb(165, 0, 0);
+}
+
+.status-event.done {
+	background: rgb(8, 158, 8);
+}

@@ -1,0 +1,330 @@
+/*layers*/
+#content {z-index: 300;}
+#nav {z-index: 500;}
+#sidebarr {z-index: 600;}
+.drop-hover-menu {z-index: 700;}
+
+/*utilities*/
+.o1 {opacity: 0.1;}
+.o2 {opacity: 0.2;}
+.o3 {opacity: 0.3;}
+.o4 {opacity: 0.4;}
+.o5 {opacity: 0.5;}
+.o6 {opacity: 0.6;}
+.o7 {opacity: 0.7;}
+.o8 {opacity: 0.8;}
+.o9 {opacity: 0.9;}
+.o10 {opacity: 1;}
+
+.mb-0 {margin-bottom: 0px;}
+.mb-10 {margin-bottom: 10px;}
+.mb-15 {margin-bottom: 15px;}
+.mb-20 {margin-bottom: 20px;}
+.mb-25 {margin-bottom: 25px;}
+.mb-30 {margin-bottom: 30px;}
+.mb-40 {margin-bottom: 40px;}
+.mb-50 {margin-bottom: 50px;}
+
+.mt-10 {margin-top: 10px;}
+.mt-15 {margin-top: 15px;}
+.mt-20 {margin-top: 20px;}
+.mt-25 {margin-top: 25px;}
+.mt-30 {margin-top: 30px;}
+.mt-40 {margin-top: 40px;}
+.mt-50 {margin-top: 50px;}
+
+.font-size-10 {font-size: 10px;}
+.font-size-11 {font-size: 11px;}
+.font-size-12 {font-size: 12px;}
+.font-size-13 {font-size: 13px;}
+.font-size-14 {font-size: 14px;}
+.font-size-15 {font-size: 15px;}
+.font-size-16 {font-size: 16px;}
+.font-size-17 {font-size: 17px;}
+.font-size-18 {font-size: 18px;}
+.font-size-19 {font-size: 19px;}
+.font-size-20 {font-size: 20px;}
+.font-size-21 {font-size: 21px;}
+.font-size-22 {font-size: 22px;}
+.font-size-23 {font-size: 23px;}
+.font-size-24 {font-size: 24px;}
+.font-size-25 {font-size: 25px;}
+.font-size-26 {font-size: 26px;}
+.font-size-27 {font-size: 27px;}
+.font-size-28 {font-size: 28px;}
+.font-size-29 {font-size: 29px;}
+.font-size-30 {font-size: 30px;}
+.font-size-31 {font-size: 31px;}
+.font-size-32 {font-size: 32px;}
+
+.w-5 {width: 5% !important;}
+.w-10 {width: 10% !important;}
+.w-20 {width: 20% !important;}
+.w-30 {width: 30% !important;}
+.w-40 {width: 40% !important;}
+.w-50 {width: 50% !important;}
+.w-60 {width: 60% !important;}
+.w-70 {width: 70% !important;}
+.w-80 {width: 80% !important;}
+.w-90 {width: 90% !important;}
+
+.cursor-ptr {cursor: pointer;}
+
+.text-italic {font-style: italic;}
+
+.black {color: #303030 !important;}
+.grey {color: #cecece !important;}
+
+/*page typography*/
+@font-face{
+	font-family: 'Rajdhani-Bold';
+	src: url('../../fonts/Rajdhani-Bold.ttf');
+}
+
+/*money displays*/
+.money img {
+	width: 12px;
+    position: relative;
+    top: -2px;
+}
+
+/*money variations*/
+.money.left img {margin-right: 5px;}
+.money.right img {margin-left: 5px;}
+.money-14 {font-size: 14px;}
+.money-16 {font-size: 16px;}
+.money-inline {margin: 0 3px;}
+
+/*core*/
+html {
+    height: 100%;
+}
+body {
+	min-height: 100%;
+	font-size: 14px;
+	background: #fafafa;
+	color: #303030;
+}
+a {
+	text-decoration: none;
+	color: #303030;
+}
+a:hover,
+a:active,
+a:focus,
+a:visited {
+	text-decoration: none !important;
+	outline: none !important;
+	color: #303030;
+}
+table {
+	font-size: 14px;
+}
+.btn-light {
+	background-color: #eaeaea;
+	border-color: #eaeaea;
+}
+.btn-light.disabled, 
+.btn-light:disabled {
+	background-color: #efefef;
+	border-color: #efefef;
+}
+.icon {position: relative;}
+.content-header h1 {
+	margin: 0;
+}
+.page-section.padded-10 {
+	padding: 10px;
+}
+#content {
+    margin-left: 220px;
+    height: 100%;
+    padding-bottom: 100px;
+}
+.content-header {
+    padding: 25px 10px;
+}
+.form-control {
+	font-size: 14px;
+}
+.flex-page-filter {
+	display: flex;
+}
+/*.flex-page-filter .form-group {
+	margin-right: 10px;
+}*/
+.flex-page-filter .form-group select,
+.flex-page-filter .form-group input,
+.flex-page-filter .form-group button {
+	height: 100% !important;
+}
+.flex-page-filter .form-group + div {
+	margin-left: 10px;
+}
+.card.below-nav {
+	border-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.event-card:hover {
+	/*background: rgb(0 0 0 / 0.04);*/
+}
+.event-card-id-text {
+	font-weight: 900;
+	margin-right: 4px;
+}
+.event-card-live-text {
+	color: rgb(230 33 99 / 1);
+	font-weight: 900;
+	margin-left: 4px;
+}
+.event-card-past-text {
+	opacity: 0.5;
+	font-weight: 900;
+	margin-left: 4px;
+}
+.event-card-league-name {
+	opacity: .5;
+}
+.event-card-odds {
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: 600;
+	background: #8BC34A;
+	padding: 3px 10px;
+	border-radius: 100px;
+	line-height: 11px;
+	color: white;
+	position: relative;
+	top: -2px;
+	margin-left: 5px;
+}
+.bet-panel-team-thumb {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	position: relative;
+	top: -2px;
+}
+.bet-panel-team-thumb.right {
+	margin-left: 5px;
+	margin-right: 0px;
+}
+.dropdown-menu {
+	font-size: 14px;
+}
+.verify-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    margin-right: 6px;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+}
+.verify-indicator.right {
+    margin-right: 0px;
+    margin-left: 6px;
+}
+.verify-indicator.red {
+    background: #E91E63;
+}
+.verify-indicator.green {
+    background: #4CAF50;
+}
+a.btn-primary,
+a.btn-success {
+	color: rgb(255 255 255 / .9);
+}
+.has-spinner {
+	position: relative;
+}
+.has-spinner.loading .info-container {
+	opacity: 0;
+}
+.spinner-container {
+	opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.has-spinner.loading .spinner-container {
+	opacity: 1;
+}
+.spinner-container .spinner-border {
+	height: 18px;
+    width: 18px;
+    display: block;
+}
+.btn-icon {
+	height: 14px;
+	width: 14px;
+	margin-top: -8px;
+	position: relative;
+	top: 2px;
+}
+.btn-icon.left {
+    margin-right: 6px;
+}
+.btn-icon.right {
+    margin-left: 6px;
+}
+.modal-spinner {
+	padding: 70px;
+	text-align: center;
+	opacity: 0.5;
+	display: none;
+}
+.quick-stats-container.loading .modal-spinner {
+	display: block;
+}
+.quick-stats-container.loading .quick-stats-content {
+	display: none;
+}
+.user-more {
+	height: 14px;
+    position: relative;
+    top: -2px;
+    opacity: 0.3;
+    width: 14px;
+    margin-right: 2px;
+}
+.user-more.left {
+    margin-right: 2px;
+}
+.user-more.right {
+    margin-left: 2px;
+}
+table .btn-group {
+	top: -2px;
+}
+.dropdown-toggle::after {
+	vertical-align: .17em;
+}
+.user-drop span {
+	color: #03a9f4;
+}
+.user-drop:active span,
+.user-drop:focus span,
+.user-drop:hover span {
+	color: #00bcd4;
+}
+.bcrumb {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.bcrumb .current {
+	opacity: .5;
+}
+.bcrumb-icon {
+	height: 13px;
+	width: 13px;
+	opacity: .3;
+	margin: 0 10px;
+	position: relative;
+	top: 1px;
+}

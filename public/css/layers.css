@@ -1,0 +1,123 @@
+.effects, .mobile-effects {z-index: 20;}
+.ly2 {z-index: 21;}
+.ly3, .mly2 {z-index: 22;}
+.ly4, .mly3 {z-index: 23;}
+
+.banner-texts {
+	z-index: 30;
+}
+.bib1 {
+	z-index: 35;
+}
+.menu-olay,
+.banner-bib,
+body.login .art-wrapper,
+body.inside2 #desktop-banner h1 {
+	z-index: 40;
+}
+.content,
+body.login .login-menu,
+body.inside.cards .content-wrapper,
+.team-wrapper,
+.team-banner .stars,
+.game-select-box:after,
+.shows-wrapper,
+.root,
+.mb-content,
+.tk-game-list,
+.exp-wrapper .right,
+.register-banner-2,
+.mb-home-effects-3 {
+	z-index: 50;
+}
+.team-wrapper.active,
+.team-banner .texts,
+.team-layer,
+.game-select-box span,
+.shows-wrapper.active,
+img.ill,
+.exp-wrapper .right:before,
+.registration-page-logo,
+.registration-page-tagline,
+.register-banner-3,
+.home-mb-guest-content,
+.home-mb-shortcuts {
+	z-index: 52;
+}
+.menu-focus-overlay,
+.desktop-event-filter-main-drop,
+.exp-wrapper .right .start,
+.exp-wrapper .right .mid,
+.exp-wrapper .right .end {
+	z-index: 57;
+}
+
+body.no-bg .submenu, body.no-bg #public-tray, body.no-bg #member-tray,
+.sub .tip {
+	z-index: 60;
+}
+
+.meta .desc {
+	z-index: 100;
+}
+.menu-overlay,
+.mb-menu,
+.cta-nominal-choice {
+	z-index: 110;
+}
+.logo-container,
+.utility,
+.menu,
+.roof .inner,
+.mboverlay,
+.main-nav-submenu-overlay,
+.mb-event-overlay {
+	z-index: 130;
+}
+
+.mb-snap--fanpic,
+.area-head--fanpic {
+	z-index: 140;
+}
+.mb-snap-propic,
+.area-head--propic {
+	z-index: 145;
+}
+.submenu,
+#public-tray,
+#member-tray,
+.roof .inner.active,
+.ticker-open,
+.roof,
+.mbtray,
+.main-nav-submenu,
+html body .desktop-profile-menu-trigger.active,
+.topmenu2,
+.mb-right-panel {
+	z-index: 150;
+}
+
+#top-bar .menu li.active.has-submenu::before,
+.mb-panel-triggers {
+	z-index: 290;
+}
+#top-bar .menu li.active a {
+	z-index: 3000;
+}
+
+.slide-menu,
+.toasts-wrapper {
+	z-index: 5000;
+}
+
+
+
+
+/*fluid layers*/
+.root .content {
+	z-index: 50;
+}
+.root .topmenu,
+.root .sidebar {
+	z-index: 100;
+}

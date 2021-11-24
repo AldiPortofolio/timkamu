@@ -1,0 +1,300 @@
+.curr-icon {
+	width: 16px;
+	position: relative;
+	top: -1px;
+}
+
+html, body {
+	font-family:'Nunito Sans';
+	font-size: 12px;
+	color: rgba(255,255,255,0.9);
+	height: 100%;
+}
+input[type="button"]{
+   outline:none;
+}
+input[type="button"]::-moz-focus-inner {
+   border: 0;
+}
+*:focus {
+    outline: 0 !important;
+}
+.root {position: relative;}
+a {color: #e91e63;}
+a,
+a:focus,
+a:active,
+a:hover {
+	color: #e91e63;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+strong	{font-weight: 800;}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.form-control {
+	height: calc(1.5em + .75rem + 5px);
+}
+/* forms css */
+.form-control.tk {
+    border-radius: 0px;
+    border: 0px;
+}
+.form-control.tk.input-dark {
+    background: rgba(0,0,0,0.4);
+    color: rgba(255,255,255,0.8);
+}
+.form-control-lg.tk {
+    font-size: 12px;
+    padding: 20px 15px;
+}
+.inline-curr {
+	width: 16px;
+	position: relative;
+	top: -1px;
+}
+.inline-curr.left {
+	margin-right: 10px;
+}
+.inline-curr.right {
+	margin-left: 10px;
+}
+.modal-content {
+	border-radius: 10px;
+	border: 0px;
+}
+.topmenu2 {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 100%;
+}
+.topmenu2 .curr-icon {
+	width: 16px;
+    position: relative;
+    top: -1px;
+    margin-right: 6px;
+}
+.topmenu2 .left {
+	float: left;
+	width: 10%;
+	padding-left: 45px;
+}
+.topmenu2 .right {
+	float: right;
+	width: 90%;
+	padding-right: 45px;
+}
+.topmenu2 .left a {
+}
+.topmenu2 .left a .logo {
+	height: 30px;
+    position: relative;
+    top: -3px;
+    opacity: 0.8;
+    transition: all 0.1s ease-in;
+}
+.topmenu2 .left a:hover .logo {
+	opacity: 1;
+	transform: scale(1.05);
+}
+
+.topmenu2 .right ul li {
+	float: right;
+}
+.topmenu2 .right ul li a {
+	color: rgba(255,255,255,0.7);
+	font-family: Nunito Sans ,sans-serif;
+	font-size: 14px;
+	margin-left: 36px;
+}
+.topmenu2 .right ul li a:hover {
+	color: rgba(255,255,255,1);
+}
+.topmenu2 .right ul li a .icon {
+	width: 16px;
+    position: relative;
+    top: -2px;
+    margin-right: 10px;
+}
+.menu-olay {
+	background: url(../img/menu-overlay.png) repeat-x;
+	height: 170px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.topmenu2 li.top-cta a {
+    padding: 5px 22px 5px 22px;
+    border-radius: 50px;
+    transition: all 0.1s ease-in;
+}
+.topmenu2 li.top-cta.red a {
+    padding: 5px 20px 5px 22px;
+	background: #e91e63;
+	border: 2px solid #e91e63;
+    color: white;
+    margin-left: 20px;
+}
+.topmenu2 li.top-cta.red a:hover {
+	background: #ff0057;
+	border: 2px solid #ff0057;
+}
+.topmenu2 li.top-cta.blank a {
+	border: 2px solid #ffffff99;
+	padding: 5px 22px 5px 18px;
+}
+.topmenu2 li.top-cta.blank a:hover {
+	border: 2px solid #ffffff;
+}
+.sub-back {
+	background: #ff1f6bee !important;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.sub-back .icon {
+	width: 30px;
+	height: 30px;
+}
+.inner .item {
+	background: rgba(0,0,0,0.6);
+}
+.sub-teams .item {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0 20px 0;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	border-right: 1px solid rgba(255,255,255,0.1);
+}
+.sub-teams .item:nth-child(even) {
+	border-right: 0px;
+}
+.sub-teams .item:last-child,
+.sub-teams .item:nth-last-child(2) {
+	border-bottom: 0px;
+}
+.sub-teams .item img {
+	width: 40%;
+}
+.sub-teams .item .name {
+	font-size: 20px;
+	opacity: 0.9;
+}
+.sub-teams .item.soon {
+	text-align: center;
+    line-height: initial;
+    padding: 30px;
+    font-style: italic;
+}
+.mb-menu {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transform: translate(0,-1000px);
+	transition: all 0.1s ease-in;
+	font-family: 'Nunito Sans';
+	font-weight: 800;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+}
+.mb-menu.mb-active {
+	transform: translate(0,0);
+}
+.ypr {
+	height: 60px;
+	/*background: rgba(0,0,0,0.8);*/
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.ypr > a {
+	position: absolute;
+    left: 20px;
+    top: 16px;
+    height: 30px;
+    width: 150px;
+    opacity: 0.8;
+}
+.mb-menu .inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(3000px,0);
+	display: flex;
+	flex-wrap: wrap;
+	transition: all 0.1s ease-in;
+}
+.mb-menu .inner.active {
+	transform: translate(0,0);
+	position: relative;
+}
+.mb-menu .inner a {
+	flex: 0 0 50%;
+	min-height: 120px;
+	display: block;
+	/*border-bottom: 1px solid rgba(255,255,255,0.1);*/
+	/*border-right: 1px solid rgba(255,255,255,0.1);*/
+	color: white;
+}
+.mb-menu .inner.main a {
+	font-family: Roboto-Bold;
+    font-size: 14px;
+    background-size: cover;
+    background-position: center;
+    text-transform: uppercase;
+}
+.mb-menu .inner.main a.bg-teams {
+	background-image: linear-gradient(rgb(255,0,87,0.6), rgba(255,0,87,0.6)), url(../img/lg3.jpg);
+}
+.mb-menu .inner.main a.bg-diamonds {
+	background-image: linear-gradient(rgba(0, 188, 212, 0.6), rgba(0, 188, 212, 0.6)), url(../img/tyr1.jpg);
+}
+.mb-menu .inner.main a.bg-pulsa {
+	background-image: linear-gradient(rgba(255, 193, 7, 0.6), rgba(255, 193, 7, 0.6)), url(../img/tyr2.jpg);
+}
+.mb-menu .inner.main a.bg-event {
+	background-image: linear-gradient(rgba(76, 175, 80, 0.6), rgba(76, 175, 80, 0.6)), url(../img/t0.jpg);
+}
+.mb-menu .inner.main a.bg-charge {
+	background-image: linear-gradient(rgba(103, 58, 183,0.6), rgba(103, 58, 183, 0.6)), url(../img/lg2.jpg);
+}
+.mb-menu .inner.main a.bg-board {
+	background-image: linear-gradient(rgba(121, 85, 72, 0.6), rgba(121, 85, 72, 0.6)), url(../img/tyr3.jpg);
+}
+.mb-menu .inner a:nth-child(even) {
+	border-right: 0px;
+}
+.mb-menu .inner a:last-child,
+.mb-menu .inner a:nth-last-child(2) {
+	border-bottom: 0px;
+}
+.mb-menu .inner a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.mb-close {
+	position: absolute;
+    right: 18px;
+    top: 16px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+}
+@media (max-width: 992px) {
+    body.bg1 {
+        background-image: linear-gradient(#EC1866, #033C62) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+}
+@media (max-width: 768px) {
+    .form-control-lg {
+        font-size: 16px !important;
+    }
+}

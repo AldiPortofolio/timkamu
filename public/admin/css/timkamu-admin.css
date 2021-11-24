@@ -1,0 +1,80 @@
+body, html {
+	font-size: 14px !important;
+}
+.card {
+	border-radius: 0px;
+}
+@media (min-width: 768px) {
+	.sidebar {
+		width: 17rem!important;
+	}
+}
+
+.sidebar .nav-item .nav-link {
+	padding: 10px 0px 10px 15px;
+}
+.sidebar .sidebar-brand {
+	padding: 0;
+}
+.sidebar .nav-item.active .nav-link {
+	font-weight: 400;
+}
+.bg-gradient-primary {
+	background-image: linear-gradient(180deg,#AD1457 10%,#3F51B5 100%);
+}
+.topbar {
+	height: 50px;
+}
+.topbar .nav-item {
+	line-height: 50px;
+}
+.topbar .nav-item.dropdown .dropdown-toggle::after {
+	position: relative;
+	top: 1px;
+}
+.nav-date {
+	align-items: center;
+	padding: 0 5px;
+}
+.sidebar-dropdown-tray {
+	background: rgb(0 0 0 / 20%);
+}
+.sidebar .nav-item .collapse, 
+.sidebar .nav-item .collapsing {
+	margin: 0;
+}
+.sidebar .nav-item .collapse .collapse-inner .collapse-item:hover {
+	background-color: unset;
+}
+.sidebar .nav-item .collapse .collapse-inner .collapse-item, 
+.sidebar .nav-item .collapsing .collapse-inner .collapse-item {
+	color: rgb(255 255 255 / 60%);
+	margin: 0;
+	border-radius: 0;
+	padding: 8px 22px;
+}
+.sidebar .nav-item .collapse .collapse-inner .collapse-item:hover {
+	background-color: rgb(0 0 0 / 10%);
+	color: rgb(255 255 255 / 90%);
+}
+
+.icon-sidebar {
+	width: 16px;
+	margin-right: 10px;
+	opacity: 0.5;
+	position: relative;
+	top: -1px;
+}
+.cell-width-01 {
+	width: 1%;
+}
+.cell-width-10 {
+	width: 10%;
+}
+.feather-card-icon {
+	opacity: 0.5;
+}
+.card-info-adds {
+	font-weight: 400;
+    font-size: 12px;
+}

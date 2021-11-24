@@ -1,0 +1,109 @@
+/* attempt at standardized buttons */
+.sb-1 {
+    border: 0;
+    padding: 10px 25px;
+}
+.sb-red {
+    background: rgb(233 30 99);
+    color: rgb(255 255 255 / 90%);
+}
+.sb-outline {
+    background: none;
+    border: 1px solid rgb(255 255 255 / 20%);
+    color: rgb(255 255 255 / 90%);
+}
+.sb-red:focus,
+.sb-red:active,
+.sb-red:hover {
+    background: rgb(255 0 90);
+    color: rgb(255 255 255 / 90%);
+}
+.sb-outline:focus,
+.sb-outline:active,
+.sb-outline:hover {
+    background: rgb(255 255 255);
+    border: 1px solid rgb(255 255 255);
+    color: rgb(0 0 0 / 80%);
+}
+
+
+
+
+.btn {
+    border:0px;
+    /*line-height: 20px;*/
+    border-radius: 0px;
+    transition: all 0.2s ease-in-out !important;
+    padding: 6px 22px;
+    outline: 0;
+}
+.btn:focus,
+.btn:active,
+.btn:hover {
+    outline: 0;
+}
+.btn-primary {
+    background: #e91e63;
+    color: #ffffffee !important;
+}
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle {
+    background: #ff1f6b;
+    color: #ffffffee;
+}
+.btn-blue {
+    background: #6543DF;
+    color: #ffffffee !important;
+}
+.btn-blue:focus,
+.btn-blue:active,
+.btn-blue:hover,
+.btn-blue:not(:disabled):not(.disabled).active, 
+.btn-blue:not(:disabled):not(.disabled):active, 
+.show>.btn-blue.dropdown-toggle {
+    background: #7f5ff1;
+    color: #ffffffee;
+}
+.btn-orange {
+    background: #ff5722;
+    color: #ffffffee !important;
+}
+.btn-orange:focus,
+.btn-orange:active,
+.btn-orange:hover,
+.btn-orange:not(:disabled):not(.disabled).active, 
+.btn-orange:not(:disabled):not(.disabled):active, 
+.show>.btn-orange.dropdown-toggle {
+    background: #f3754d;
+    color: #ffffffee;
+}
+
+.btn.round {
+    border-radius: 30px;
+    padding: 8px 22px 10px 22px;
+}
+.button-icon {
+    top: 0;
+}
+.badge-red {
+    background: #ff1f6b;
+    color: #ffffffee;
+}
+
+.btn-metro {
+    padding: 12px 50px;
+    font-weight: 800;
+    border: 0px;
+    border-radius: 0px;
+}
+.btn-metro.red {
+    background: #ff0057;
+    color: white;
+}
+.btn-metro.red:hover {
+    background: #ff0057;
+}

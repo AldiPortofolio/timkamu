@@ -1,0 +1,1385 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="57x57" href="http://127.0.0.1:8000/admin2/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://127.0.0.1:8000/admin2/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://127.0.0.1:8000/admin2/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://127.0.0.1:8000/admin2/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://127.0.0.1:8000/admin2/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://127.0.0.1:8000/admin2/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://127.0.0.1:8000/admin2/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://127.0.0.1:8000/admin2/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://127.0.0.1:8000/admin2/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="http://127.0.0.1:8000/admin2/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://127.0.0.1:8000/admin2/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="http://127.0.0.1:8000/admin2/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://127.0.0.1:8000/admin2/favicon/favicon-16x16.png">
+    <link rel="manifest" href="http://127.0.0.1:8000/admin2/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="csrf-token" content="luQAl3x243gfmWxl0JJHAv0EGnfvhlKEEcaNzjQK">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://127.0.0.1:8000/admin2/bootstrap/css/bootstrap.min.css">
+
+    <!-- admin css -->
+    <link rel="stylesheet" href="http://127.0.0.1:8000/admin2/css/admin2.css?v=7">
+
+    <title>Timkamu Admin</title>
+</head>
+<body>
+    <section id="sidebar">
+
+    <div class="sidebar-logo">
+        TimKamu<span class="o3">.com</span>
+    </div>
+
+    <div class="sidebar-link ">
+        <a href="http://127.0.0.1:8000/admin-tkmu">
+            <i data-feather="home" class="icon"></i>
+            Dashboard
+        </a>
+    </div>
+
+    <div class="sidebar-link has-descendants
+        
+    ">
+        <a href="#">
+            <i data-feather="airplay" class="icon"></i>
+            <i data-feather="chevron-right" class="cue"></i>
+            Events
+        </a>
+        <div class="sidebar-sub">
+            <a class="" href="http://127.0.0.1:8000/admin-tkmu/events">List</a>
+            <a class="" href="http://127.0.0.1:8000/admin-tkmu/events/create">Create</a>
+            <a class="" href="#" data-toggle="modal" data-target="#event-performance-select-modal">Event Performance</a>
+            <a class="" href="#" data-toggle="modal" data-target="#event-betters-select-modal">Event Participants</a>
+            <a class="" href="http://127.0.0.1:8000/admin-tkmu/reports">Event Performance Range</a>
+        </div>
+    </div>
+
+    <div class="sidebar-link has-descendants
+        
+    ">
+        <a href="#">
+            <i data-feather="users" class="icon"></i>
+            <i data-feather="chevron-right" class="cue"></i>
+            Members
+        </a>
+        <div class="sidebar-sub">
+            <a class="" href="http://127.0.0.1:8000/admin-tkmu/users">List</a>
+            <a class="" href="http://127.0.0.1:8000/admin-tkmu/users-overview">Overview</a>
+            <a class="" href="http://127.0.0.1:8000/admin-tkmu/transactions-historical-member">Historical</a>
+            <a class="" href="http://127.0.0.1:8000/admin-tkmu/users-traffics">Trafic</a>
+        </div>
+    </div>
+
+    <div class="sidebar-link has-descendants
+        
+        
+        
+        
+    ">
+        <a href="#">
+            <i data-feather="dollar-sign" class="icon"></i>
+            <i data-feather="chevron-right" class="cue"></i>
+            Loyalty Points
+        </a>
+        <div class="sidebar-sub">
+            <a class="" href="http://127.0.0.1:8000/admin-tkmu/lp-transaction">Monthly Transactions</a>
+            <a class="" href="http://127.0.0.1:8000/admin-tkmu/lp-transaction-member">Transactions per member</a>
+            <a class="" href="http://127.0.0.1:8000/admin-tkmu/lp-recharge">Recharge Report</a>
+            <a class="" href="http://127.0.0.1:8000/admin-tkmu/lp-circulation">Circulation Report</a>
+        </div>
+    </div>
+
+    <div class="sidebar-link has-descendants
+        
+    ">
+        <a href="#">
+            <i data-feather="dollar-sign" class="icon"></i>
+            <i data-feather="chevron-right" class="cue"></i>
+            Top Ups
+        </a>
+        <div class="sidebar-sub">
+            <a href="http://127.0.0.1:8000/admin-tkmu/transactions-overview" class="">Overview</a>
+            <a href="http://127.0.0.1:8000/admin-tkmu/transactions-member?username=" class="">Top Ups Per Member</a>
+            <a href="http://127.0.0.1:8000/admin-tkmu/transactions/game?status=pending"
+                class="">
+                Game Topup <span class="badge badge-secondary">13</span>            </a>
+            <a href="http://127.0.0.1:8000/admin-tkmu/transactions/pulsa?status=pending" class="">Isi Pulsa <span class="badge badge-secondary">13</span></a>
+            <a href="http://127.0.0.1:8000/admin-tkmu/transactions/token?status=pending" class="">PLN Token <span class="badge badge-secondary">5</span></a>
+        </div>
+    </div>
+
+    <div class="sidebar-link has-descendants
+        
+        
+        
+        
+    ">
+        <a href="#">
+            <i data-feather="codepen" class="icon"></i>
+            <i data-feather="chevron-right" class="cue"></i>
+            Other data
+        </a>
+        <div class="sidebar-sub">
+            <a href="http://127.0.0.1:8000/admin-tkmu/stats" class="">Key Stats</a>
+            <a href="http://127.0.0.1:8000/admin-tkmu/promos"  class="">Promos</a>
+            <a href="http://127.0.0.1:8000/admin-tkmu/quests"  class="">Quests</a>
+            <a href="http://127.0.0.1:8000/admin-tkmu/tournaments" class="">Tournaments</a>
+        </div>
+    </div>
+
+    <div class="nav-wedge"></div>
+
+    <div class="sidebar-link">
+        <a href="#" data-toggle="modal" data-target="#search-user-by-username">
+            <i data-feather="search" class="icon"></i>
+            Search user
+        </a>
+    </div>
+
+    <div class="sidebar-link">
+        <a href="http://127.0.0.1:8000/admin-tkmu/sign-out">
+            <i data-feather="log-out" class="icon"></i>
+            Sign Out
+        </a>
+    </div>
+
+</section>
+
+<style type="text/css">
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 220px;
+        height: 100%;
+        border-right: 1px solid rgb(0 0 0 / .125);
+        background: rgb(255 255 255 / 1);
+    }
+    .sidebar-logo {
+        padding: 20px 30px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .sidebar-link {
+        position: relative;
+        border-left: 4px solid #fff;
+    }
+    .sidebar-link.active,
+    .sidebar-link:hover {
+        border-left: 4px solid #00BCD4;
+    }
+    .sidebar-link > a {
+        display: block;
+        padding: 12px 30px 12px 52px;
+    }
+    .sidebar-link a.active {
+        /*background: rgb(0 0 0 / .04);*/
+    }
+    .sidebar-link a:active,
+    .sidebar-link a:focus,
+    .sidebar-link a:hover {
+        color: rgb(0 0 0 / 1);
+    }
+    .sidebar-link .icon {
+        position: absolute;
+        left: 28px;
+        top: 11px;
+        width: 14px;
+        opacity: .3;
+    }
+    .sidebar-link .cue {
+        position: absolute;
+        right: 24px;
+        top: 10px;
+        width: 14px;
+        opacity: 0.3;
+        transition: all 0.1s ease-in-out;
+    }
+    .sidebar-link.active .cue {
+        transform: rotate(90deg);
+    }
+    .sidebar-sub {
+        background: rgb(0 0 0 / .04);
+        display: none;
+    }
+    .sidebar-link.active .sidebar-sub {
+        display: block;
+    }
+    .sidebar-sub > a {
+        display: block;
+        padding: 12px 30px 12px 52px;
+    }
+    .sidebar-sub > a.active,
+    .sidebar-sub > a:hover {
+        background: rgb(0 0 0 / .04);
+    }
+    .nav-wedge {
+        height: 1px;
+        background: rgb(0 0 0 / .075);
+        margin: 14px 0 10px 0;
+    }
+</style>    <section id="content">
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="mb-0">Important Numbers</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style type="text/css">
+        .big-table-container {
+            overflow-x: auto;
+        }
+        .big-table td {
+            min-width: 80px !important;
+        }
+    </style>
+
+    <div class="page-section padded-10 mb-20">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 mb-20">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="big-table-container">
+                               <table class="table table-sm table-bordered mb-0 big-table table-hover text-center b-bold">
+                                   <tbody>
+                                       <tr>
+                                            <td></td>
+                                           <td class="bl-bold br-bold"><strong>All time</strong></td>
+                                           <td class="bl-bold br-bold" colspan="4"><strong>September 2020</strong></td>
+                                           <td class="bl-bold br-bold" colspan="4"><strong>October 2020</strong></td>
+                                           <td class="bl-bold br-bold" colspan="4"><strong>November 2020</strong></td>
+                                           <td class="bl-bold br-bold" colspan="4"><strong>December 2020</strong></td>
+                                           <td class="bl-bold br-bold" colspan="4"><strong>January 2021</strong></td>
+                                       </tr>
+                                       <tr>
+                                            <td></td>
+                                           <td class="bl-bold br-bold"></td>
+
+                                            <td>W1 <br>1 - 7</td>
+                                            <td>W2 <br>8 - 14</td>
+                                            <td>W3 <br>15 - 21</td>
+                                           <td class="br-bold">W4 <br>22 - 31</td>
+
+                                            <td>W1 <br>1 - 7</td>
+                                            <td>W2 <br>8 - 14</td>
+                                            <td>W3 <br>15 - 21</td>
+                                           <td class="br-bold">W4 <br>22 - 31</td>
+
+                                            <td>W1 <br>1 - 7</td>
+                                            <td>W2 <br>8 - 14</td>
+                                            <td>W3 <br>15 - 21</td>
+                                           <td class="br-bold">W4 <br>22 - 30</td>
+
+                                            <td>W1 <br>1 - 7</td>
+                                            <td>W2 <br>8 - 14</td>
+                                            <td>W3 <br>15 - 21</td>
+                                           <td class="br-bold">W4 <br>22 - 31</td>
+
+                                           <td>W1 <br>1 - 7</td>
+                                           <td>W2 <br>8 - 14</td>
+                                           <td>W3 <br>15 - 21</td>
+                                           <td class="br-bold">W4 <br>22 - 31</td>
+                                       </tr>
+                                       <tr>
+                                            <td class="text-left br-bold">Members</td>
+                                           <td class="text-right"> 6837 </td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">0</span></td>
+                                                                                            <td class="text-right">  11</td>
+                                                                                            <td class="text-right">  13</td>
+                                                                                            <td class="text-right bl-bold">  5</td>
+                                                                                            <td class="text-right">  564</td>
+                                                                                            <td class="text-right">  2600</td>
+                                                                                            <td class="text-right">  88</td>
+                                                                                            <td class="text-right bl-bold">  112</td>
+                                                                                            <td class="text-right">  35</td>
+                                                                                            <td class="text-right">  36</td>
+                                                                                            <td class="text-right">  31</td>
+                                                                                            <td class="text-right bl-bold">  12</td>
+                                                                                            <td class="text-right">  10</td>
+                                                                                            <td class="text-right">  200</td>
+                                                                                            <td class="text-right">  2127</td>
+                                                                                            <td class="text-right bl-bold">  602</td>
+                                                                                            <td class="text-right">  134</td>
+                                                                                            <td class="text-right">  235</td>
+                                                                                            <td class="text-right">  22</td>
+                                                                                   </tr>
+                                       <tr>
+                                           <td class="text-left br-bold">Phone verified</td>
+                                           <td class="text-right"> 4608 </td>
+                                                                                       <td class="text-right bl-bold">   <span class="o3">0</span></td>
+                                                                                            <td class="text-right">   <span class="o3">0</span></td>
+                                                                                            <td class="text-right">   <span class="o3">0</span></td>
+                                                                                            <td class="text-right">   9</td>
+                                                                                            <td class="text-right bl-bold">   4</td>
+                                                                                            <td class="text-right">   395</td>
+                                                                                            <td class="text-right">   1921</td>
+                                                                                            <td class="text-right">   56</td>
+                                                                                            <td class="text-right bl-bold">   72</td>
+                                                                                            <td class="text-right">   16</td>
+                                                                                            <td class="text-right">   20</td>
+                                                                                            <td class="text-right">   10</td>
+                                                                                            <td class="text-right bl-bold">   5</td>
+                                                                                            <td class="text-right">   2</td>
+                                                                                            <td class="text-right">   71</td>
+                                                                                            <td class="text-right">   1265</td>
+                                                                                            <td class="text-right bl-bold">   427</td>
+                                                                                            <td class="text-right">   112</td>
+                                                                                            <td class="text-right">   201</td>
+                                                                                            <td class="text-right">   22</td>
+                                                                                   </tr>
+                                       <tr>
+                                           <td class="text-left br-bold">Unique visitors (GA)</td>
+                                           <td class="text-right"> 19862 </td>
+                                                                                       <td class="text-right bl-bold">  <span class="o3">0</span></td>
+                                                                                            <td class="text-right">  76</td>
+                                                                                            <td class="text-right">  88</td>
+                                                                                            <td class="text-right">  115</td>
+                                                                                            <td class="text-right bl-bold">  132</td>
+                                                                                            <td class="text-right">  1487</td>
+                                                                                            <td class="text-right">  6039</td>
+                                                                                            <td class="text-right">  1092</td>
+                                                                                            <td class="text-right bl-bold">  548</td>
+                                                                                            <td class="text-right">  391</td>
+                                                                                            <td class="text-right">  346</td>
+                                                                                            <td class="text-right">  428</td>
+                                                                                            <td class="text-right bl-bold">  230</td>
+                                                                                            <td class="text-right">  240</td>
+                                                                                            <td class="text-right">  1131</td>
+                                                                                            <td class="text-right">  4152</td>
+                                                                                            <td class="text-right bl-bold">  1721</td>
+                                                                                            <td class="text-right">  481</td>
+                                                                                            <td class="text-right">  738</td>
+                                                                                            <td class="text-right">  427</td>
+                                                                                   </tr>
+                                       <tr>
+                                           <td class="text-left br-bold">Total Checkout</td>
+                                           <td class="text-right"> Rp 16,999,000 </td>
+                                                                                      <td class="text-right bl-bold" colspan="4">  Rp 998,000</td>
+                                                                                           <td class="text-right bl-bold" colspan="4">  Rp 11,961,000</td>
+                                                                                           <td class="text-right bl-bold" colspan="4">  Rp 937,000</td>
+                                                                                           <td class="text-right bl-bold" colspan="4">  Rp 1,798,800</td>
+                                                                                           <td class="text-right bl-bold" colspan="4">  Rp 1,304,200</td>
+                                                                                   </tr>
+                                       <tr>
+                                           <td class="text-left br-bold">Total Checkout MLBB</td>
+                                           <td class="text-right"> Rp 8,445,400 </td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 998,000</td>
+                                                                                            <td class="text-right bl-bold">   Rp 179,000</td>
+                                                                                            <td class="text-right">   Rp 288,000</td>
+                                                                                            <td class="text-right">   Rp 2,688,000</td>
+                                                                                            <td class="text-right">   Rp 2,148,000</td>
+                                                                                            <td class="text-right bl-bold">   Rp 120,000</td>
+                                                                                            <td class="text-right">   Rp 95,000</td>
+                                                                                            <td class="text-right">   Rp 233,800</td>
+                                                                                            <td class="text-right">   Rp 25,000</td>
+                                                                                            <td class="text-right bl-bold">   Rp 916,200</td>
+                                                                                            <td class="text-right">   Rp 220,000</td>
+                                                                                            <td class="text-right">   Rp 198,000</td>
+                                                                                            <td class="text-right">   Rp 25,000</td>
+                                                                                            <td class="text-right bl-bold">   Rp 25,000</td>
+                                                                                            <td class="text-right">   Rp 138,400</td>
+                                                                                            <td class="text-right">   Rp 148,000</td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                   </tr>
+                                       <tr>
+                                           <td class="text-left br-bold">Total Checkout Freefire</td>
+                                           <td class="text-right"> Rp 2,767,600 </td>
+                                                                                        <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 1,830,000</td>
+                                                                                            <td class="text-right">   Rp 370,000</td>
+                                                                                            <td class="text-right bl-bold">   Rp 41,000</td>
+                                                                                            <td class="text-right">   Rp 51,000</td>
+                                                                                            <td class="text-right">   Rp 53,200</td>
+                                                                                            <td class="text-right">   Rp 37,000</td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 50,000</td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 29,600</td>
+                                                                                            <td class="text-right bl-bold">   Rp 177,600</td>
+                                                                                            <td class="text-right">   Rp 29,600</td>
+                                                                                            <td class="text-right">   Rp 98,600</td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                   </tr>
+                                       <tr>
+                                           <td class="text-left br-bold">Total Checkout PUBGM</td>
+                                           <td class="text-right"> Rp 147,000 </td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 129,000</td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 18,000</td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                   </tr>
+                                       <tr>
+                                           <td class="text-left br-bold">Total Checkout Valorant</td>
+                                           <td class="text-right"> <span class="o3">Rp 0</span> </td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                   </tr>
+                                       <tr>
+                                           <td class="text-left br-bold">Total Checkout Ragnarok</td>
+                                           <td class="text-right"> <span class="o3">Rp 0</span> </td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                   </tr>
+                                       <tr>
+                                           <td class="text-left br-bold">Total Checkout Telkomsel Pulsa</td>
+                                           <td class="text-right"> Rp 4,718,000 </td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 100,000</td>
+                                                                                            <td class="text-right">   Rp 2,829,000</td>
+                                                                                            <td class="text-right">   Rp 1,250,000</td>
+                                                                                            <td class="text-right bl-bold">   Rp 133,000</td>
+                                                                                            <td class="text-right">   Rp 25,000</td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 38,000</td>
+                                                                                            <td class="text-right bl-bold">   Rp 50,000</td>
+                                                                                            <td class="text-right">   Rp 102,000</td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 191,000</td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                   </tr>
+                                       <tr>
+                                           <td class="text-left br-bold">Total Checkout Telkomsel Kuota</td>
+                                           <td class="text-right"> Rp 52,000 </td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 36,000</td>
+                                                                                            <td class="text-right">   Rp 16,000</td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                   </tr>
+                                       <tr>
+                                           <td class="text-left br-bold">Total Checkout XL</td>
+                                           <td class="text-right"> <span class="o3">Rp 0</span> </td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                   </tr>
+                                       <tr>
+                                           <td class="text-left br-bold">Total Checkout Tri</td>
+                                           <td class="text-right"> Rp 180,000 </td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 46,000</td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 20,000</td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 114,000</td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                   </tr>
+                                       <tr>
+                                           <td class="text-left br-bold">Total Checkout Google Voucher</td>
+                                           <td class="text-right"> <span class="o3">Rp 0</span> </td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                   </tr>
+                                       <tr>
+                                           <td class="text-left br-bold">Total Checkout Token</td>
+                                           <td class="text-right"> Rp 689,000 </td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 52,000</td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 65,000</td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right bl-bold">   Rp 65,000</td>
+                                                                                            <td class="text-right">   Rp 52,000</td>
+                                                                                            <td class="text-right">   Rp 65,000</td>
+                                                                                            <td class="text-right">   Rp 26,000</td>
+                                                                                            <td class="text-right bl-bold">  <span class="o3">Rp 0</span></td>
+                                                                                            <td class="text-right">   Rp 78,000</td>
+                                                                                            <td class="text-right">   Rp 286,000</td>
+                                                                                            <td class="text-right">  <span class="o3">Rp 0</span></td>
+                                                                                   </tr>
+                                   </tbody>
+                               </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="page-modals">
+
+</section>
+
+<style type="text/css">
+    /*page specific css*/
+    /*page specific css*/
+    .b-bold {
+        border: 2px solid #aaa !important;
+    }
+    .bl-bold {
+        border-left: 2px solid #aaa !important;
+    }
+    .br-bold {
+        border-right: 2px solid #aaa !important;
+    }
+    .bt-bold {
+        border-top: 2px solid #aaa !important;
+    }
+    .bb-bold {
+        border-bottom: 2px solid #aaa !important;
+    }
+
+</style>
+
+    <section id="app-modals">
+
+	<div class="modal" tabindex="-1" role="dialog" id="page-uc">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+		      	<div class="modal-header">
+		        	<h5 class="modal-title">Page information</h5>
+		        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          		<span aria-hidden="true">&times;</span>
+		        	</button>
+		      	</div>
+		      	<div class="modal-body">
+		        	<p>Page is still under construction.</p>
+		      	</div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Okay</button>
+		      	</div>
+    		</div>
+	  	</div>
+	</div>
+
+	<div class="modal close-all" tabindex="-1" role="dialog" id="member-stats">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+		      	<div class="modal-body">
+		      		<div class="quick-stats-container">
+  			      		<div class="modal-spinner"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>
+  			      		<div class="quick-stats-content">
+  			      			<h3 class="mb-20" id="username">brosot7</h3>
+  			      			<p class="o3 mb-10">Bet stats</p>
+  				        	<table class="table table-sm table-bordered table-hover mb-20">
+  				        	    <tbody>
+  				        	        <tr>
+  				        	        	<td>Win rate</td>
+  				        	        	<td class="text-right" id="win-rate">72%</td>
+  				        	        </tr>
+  				        	        <tr>
+  				        	        	<td>Total slips</td>
+  				        	        	<td class="text-right" id="total-slips">1,000</td>
+  				        	        </tr>
+  				        	        <tr>
+  				        	        	<td>Total win</td>
+  				        	        	<td class="text-right" id="win-slip">720</td>
+  				        	        </tr>
+  				        	    </tbody>
+  				        	</table>
+  			      			<p class="o3 mb-10">Money stats</p>
+  				        	<table class="table table-sm table-bordered table-hover mb-20">
+  				        	    <tbody>
+  				        	        <tr>
+  				        	        	<td>Total LP recharge (count)</td>
+  				        	        	<td class="text-right"><span id="count-lp-recharge">12</span></td>
+  				        	        </tr>
+  				        	        <tr>
+  				        	        	<td>Total LP recharge (amount)</td>
+  				        	        	<td class="text-right"><span id="amt-lp-recharge">123</span><span class="money money-14 right"><img src="http://127.0.0.1:8000/img/currencies/lp.svg"></span></td>
+  				        	        </tr>
+  				        	        <tr>
+  				        	        	<td>Total LP</td>
+  				        	        	<td class="text-right"><span id="amt-lp">2,502</span><span class="money money-14 right"><img src="http://127.0.0.1:8000/img/currencies/lp.svg"></span></td>
+  				        	        </tr>
+  				        	        <tr>
+  				        	        	<td>Total BP</td>
+  				        	        	<td class="text-right"><span id="amt-bp">502</span><span class="money money-14 right"><img src="http://127.0.0.1:8000/img/currencies/bp.svg"></span></td>
+  				        	        </tr>
+  				        	        <tr>
+  				        	        	<td>Total Coins</td>
+  				        	        	<td class="text-right"><span id="amt-coin">25</span><span class="money money-14 right"><img src="http://127.0.0.1:8000/img/currencies/coin.svg"></span></td>
+  				        	        </tr>
+  				        	    </tbody>
+  				        	</table>
+  			      			<p class="o3 mb-10">Other info</p>
+  				        	<table class="table table-sm table-bordered table-hover mb-20">
+  				        	    <tbody>
+  				        	        <tr>
+  				        	        	<td>Registered</td>
+  				        	        	<td class="text-right" id="regitration-date">24 Oct 2020 18.20</td>
+  				        	        </tr>
+  				        	        <tr>
+  				        	        	<td>Phone</td>
+  				        	        	<td class="text-right" id="user-phone">123123123</td>
+  				        	        </tr>
+  				        	        <tr>
+  				        	        	<td>Email</td>
+  				        	        	<td class="text-right" id="user-email">test@email.com</td>
+  				        	        </tr>
+  				        	    </tbody>
+  				        	</table>
+  				        	<div class="row">
+  				        		<div class="col-6">
+  				        			<a href="#" class="btn btn-block text-center mb-10 btn-sm btn-light" id="view-page">View page</a>
+  				        		</div>
+  				        		<div class="col-6">
+  				        			<a href="#" class="btn btn-block text-center mb-10 btn-sm btn-light" id="view-lp-transactions">View LP transactions</a>
+  				        		</div>
+  				        		<div class="col-6">
+  				        			<a href="#" class="btn btn-block text-center mb-10 btn-sm btn-light" id="view-all-bets">View all bets</a>
+  				        		</div>
+  				        		<div class="col-6">
+  				        			<a href="#" class="btn btn-block text-center mb-10 btn-sm btn-light" id="view-all-topups">View all topups</a>
+  				        		</div>
+  				        		<div class="col-6">
+  				        			<a href="#" class="btn btn-block text-center mb-10 btn-sm btn-light" id="view-historical">View historical</a>
+  				        		</div>
+  				        	</div>
+  			      		</div>
+		      		</div>
+		      	</div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-sm btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#search-user-by-username">User search</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal" tabindex="-1" role="dialog" id="invalid-range">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+		      	<div class="modal-header">
+		        	<h5 class="modal-title">Page information</h5>
+		        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          		<span aria-hidden="true">&times;</span>
+		        	</button>
+		      	</div>
+		      	<div class="modal-body">
+		        	<p>Pilihan tidak bisa melebihi 30 hari</p>
+		      	</div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Okay</button>
+		      	</div>
+    		</div>
+	  	</div>
+	</div>
+
+	<div class="modal" tabindex="-1" role="dialog" id="event-performance-select-modal">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+		      	<div class="modal-header">
+		        	<h5 class="modal-title">Event Performance</h5>
+		        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          		<span aria-hidden="true">&times;</span>
+		        	</button>
+		      	</div>
+		      	<div class="modal-body">
+		        	<div class="form-group mb-0">
+                        <select class="form-control form-control-sm h-100" id="ep_event_id">
+                            <option disabled>--- 20 most recent events ---</option>
+                            							<option value="118" >[#118] Lower Bracket Match 2: Todak vs Evos SG - Fri Jan 2021 12:45 - M2 World Championship Mobile Legends
+</option>
+														<option value="117" >[#117] Lower Bracket Match 1: 10S Gaming Frost vs Alter Ego - Fri Jan 2021 10:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="116" >[#116] FFML Season III Divisi 1: Match 4 - Sun Jan 2021 19:00 - Free Fire Master League</option>
+														<option value="114" >[#114] PUBGM GC Season 0 Finals - Thu Jan 2021 18:00 - PUBGM Global Championship</option>
+														<option value="113" >[#113] FFML Season III Divisi 1: Match 3 - Sat Jan 2021 19:00 - Free Fire Master League</option>
+														<option value="112" >[#112] Match 4: Upper Bracket – Bo3 - Omega vs RRQ - Fri Jan 2021 18:45 - M2 World Championship Mobile Legends
+</option>
+														<option value="111" >[#111] Match 3: Upper Bracket – Bo3 - Burmese Ghouls vs Bren Esports - Fri Jan 2021 16:15 - M2 World Championship Mobile Legends
+</option>
+														<option value="110" >[#110] Impunity KH vs Evos SG - Wed Jan 2021 18:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="109" >[#109] Todak vs Dreammax - Wed Jan 2021 16:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="108" >[#108] Unique Devu vs AE - Wed Jan 2021 14:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="107" >[#107] Resurgence vs 10S Gaming Frost - Wed Jan 2021 12:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="106" >[#106] Grup D – RRQ Hoshi vs EVOS SG - Tue Jan 2021 20:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="105" >[#105] Grup C – Bren Esports vs Alter Ego - Tue Jan 2021 18:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="104" >[#104] Grup D – RRQ Hoshi vs Dreammax - Tue Jan 2021 16:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="103" >[#103] Grup C – Bren Esports vs 10S Gaming Frost - Tue Jan 2021 14:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="102" >[#102] Grup D – EVOS SG vs Dreammax - Tue Jan 2021 12:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="101" >[#101] Grup C – Alter Ego vs 10S Gaming Frost - Tue Jan 2021 10:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="100" >[#100] Grup A – Burmese Ghouls vs Resurgence - Mon Jan 2021 20:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="99" >[#99] Grup B – Omega Esports vs Impunity KH - Mon Jan 2021 18:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="98" >[#98] Grup A – Resurgence vs Unique Devu - Mon Jan 2021 16:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="97" >[#97] Grup B – Todak vs Impunity KH - Mon Jan 2021 14:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="96" >[#96] Grup A – Burmese Ghouls vs Unique Devu - Mon Jan 2021 12:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="95" >[#95] Group B - Todak vs OMEGA Esports - Mon Jan 2021 10:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="94" >[#94] M2 World Championship Mobile Legends - Fri Jan 2021 17:31 </option>
+														<option value="93" >[#93] PUBGM Global Championship - 20/12 - Sun Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="92" >[#92] PUBGM Global Championship - 19/12 - Sat Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="91" >[#91] PUBGM Global Championship - 18/12 - Fri Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="90" >[#90] PUBGM Global Championship - 16/12 - Wed Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="89" >[#89] PUBGM Global Championship - 15/12 - Tue Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="88" >[#88] PUBGM Global Championship - 13/12 - Sun Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="87" >[#87] PUBGM Global Championship - 12/12 - Sat Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="86" >[#86] PUBGM Global Championship - 11/12 - Fri Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="85" >[#85] PUBGM Global Championship - 09/12 - Wed Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="84" >[#84] PUBGM Global Championship - 08/12 - Tue Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="83" >[#83] PUBGM Global Championship - 07/12 - Mon Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="82" >[#82] MPLI One Esports Final - Sun Dec 2020 15:30 - MPL Invitational</option>
+														<option value="81" >[#81] PUBGM Global Championship - 06/12 - Sun Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="80" >[#80] Semifinal MPLI Burmese Ghouls VS Bren Esports - Sun Dec 2020 11:00 - MPL Invitational</option>
+														<option value="79" >[#79] Semifinal MPLI GeekFam VS AE - Sun Dec 2020 11:00 - MPL Invitational</option>
+														<option value="78" >[#78] PUBGM Global Championship - 05/12 - Sat Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="77" >[#77] PUBGM Global Championship - 04/12 - Fri Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="76" >[#76] PUBGM Global Championship - 02/12 - Wed Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="75" >[#75] MPL Invitational Bren Esporst VS Aura PH - Sat Dec 2020 20:45 - MPL Invitational</option>
+														<option value="74" >[#74] MPL Invitational Burmese Ghouls VS Ronin Esports - Sat Dec 2020 17:30 - MPL Invitational</option>
+														<option value="73" >[#73] MPL Invitational RRQ Hoshi VS Alter Ego - Sat Dec 2020 14:15 - MPL Invitational</option>
+														<option value="72" >[#72] MPL Invitational Todak VS Geek Fam - Sat Dec 2020 11:00 - MPL Invitational</option>
+														<option value="71" >[#71] PUBGM Global Championship - 01/12 - Tue Dec 2020 17:30 - PUBGM Global Championship</option>
+														<option value="70" >[#70] PUBGM Global Championship - 28/11 - Sat Nov 2020 17:30 - PUBGM Global Championship</option>
+														<option value="69" >[#69] PUBGM Global Championship - 27/11 - Fri Nov 2020 17:30 - PUBGM Global Championship</option>
+														<option value="68" >[#68] MPL Invitational Match 4 - Day 2 - Sat Nov 2020 20:45 - MPL Invitational</option>
+														<option value="67" >[#67] MPL Invitational Match 3 - Day 2 - Sat Nov 2020 17:30 - MPL Invitational</option>
+														<option value="66" >[#66] MPL Invitational Match 2 - Day 2 - Sat Nov 2020 14:15 - MPL Invitational</option>
+														<option value="65" >[#65] MPL Invitational Match 1 - Day 2 - Sat Nov 2020 11:00 - MPL Invitational</option>
+														<option value="64" >[#64] MPLI One Esports Dec 2020 - Fri Nov 2020 00:00 </option>
+														<option value="63" >[#63] MPL Invitational Match 4 - Day 1 - Fri Nov 2020 20:45 - MPL Invitational</option>
+														<option value="62" >[#62] MPL Invitational Match 3 - Day 1 - Fri Nov 2020 17:30 - MPL Invitational</option>
+														<option value="61" >[#61] MPL Invitational Match 2 - Day 1 - Fri Nov 2020 14:15 - MPL Invitational</option>
+														<option value="60" >[#60] MPL Invitational Match 1 - Day 1 - Fri Nov 2020 11:00 - MPL Invitational</option>
+														<option value="59" >[#59] PUBGM Global Championship - 25/11 - Wed Nov 2020 18:00 - PUBGM Global Championship</option>
+														<option value="58" >[#58] PUBGM Global Championship - 24/11 - Tue Nov 2020 18:00 - PUBGM Global Championship</option>
+														<option value="57" >[#57] FreeFire Redbull Gold Grand Final - 21/11 - Sat Nov 2020 15:00 - Free Fire Red Bull Gold</option>
+														<option value="56" >[#56] FreeFire Continental Series - Sun Nov 2020 14:00 - Freefire Continental Series</option>
+														<option value="55" >[#55] FreeFire Redbull Gold Grand Final - 20/11 - Fri Nov 2020 15:00 - Free Fire Red Bull Gold</option>
+														<option value="54" >[#54] FreeFire Redbull Gold Semifinal - 15/11 - Sun Nov 2020 14:00 - Free Fire Red Bull Gold</option>
+														<option value="53" >[#53] FreeFire Redbull Gold Semifinal - 14/11 - Sat Nov 2020 14:00 - Free Fire Red Bull Gold</option>
+														<option value="52" >[#52] FreeFire Redbull Gold - 7/11 - Sat Nov 2020 14:00 - Free Fire Red Bull Gold</option>
+														<option value="51" >[#51] FreeFire Redbull Gold - 6/11 - Fri Nov 2020 14:00 - Free Fire Red Bull Gold</option>
+														<option value="50" >[#50] FreeFire Redbull Gold - 5/11 - Thu Nov 2020 14:00 - Free Fire Red Bull Gold</option>
+														<option value="49" >[#49] OMEGA VS BREN - Sun Oct 2020 17:30 - MPL Season 6 Philippines Playoffs</option>
+														<option value="48" >[#48] EXE VS ONIC - Sun Oct 2020 13:30 - MPL Season 6 Philippines Playoffs</option>
+														<option value="47" >[#47] PMPL SEA Finals S2 Day 3 - Sun Oct 2020 15:00 - PMPL SEA Finals S2</option>
+														<option value="46" >[#46] ONIC VS BREN - Sat Oct 2020 18:00 - MPL Season 6 Philippines Playoffs</option>
+														<option value="45" >[#45] EXE VS OMEGA - Sat Oct 2020 15:30 - MPL Season 6 Philippines Playoffs</option>
+														<option value="44" >[#44] PMPL SEA Finals S2 Day 2 - Sat Oct 2020 15:00 - PMPL SEA Finals S2</option>
+														<option value="43" >[#43] Suning VS Top Esports - Sun Oct 2020 17:00 - World Championship Semi Final</option>
+														<option value="42" >[#42] DAMWON Gaming VS G2 Esports - Sat Oct 2020 17:00 - World Championship Semi Final</option>
+														<option value="41" >[#41] RRQ VS AE - Sun Oct 2020 18:30 - MPL Season 6 PLAYOFFS</option>
+														<option value="40" >[#40] AE VS BTR - Sun Oct 2020 13:00 - MPL Season 6 PLAYOFFS</option>
+														<option value="39" >[#39] RRQ VS BTR - Sat Oct 2020 19:00 - MPL Season 6 PLAYOFFS</option>
+														<option value="38" >[#38] ONIC VS AE - Sat Oct 2020 16:00 - MPL Season 6 PLAYOFFS</option>
+														<option value="37" >[#37] BTR VS AE - Sat Oct 2020 13:00 - MPL Season 6 PLAYOFFS</option>
+														<option value="36" >[#36] ONIC VS RRQ - Fri Oct 2020 19:00 - MPL Season 6 PLAYOFFS</option>
+														<option value="35" >[#35] RRQ Sena VS SIREN Esports - Sun Oct 2020 15:00 - MDL Indonesia Season 2</option>
+														<option value="34" >[#34] SIREN Esports VS ONIC Prodigy - Sat Oct 2020 19:00 - MDL Indonesia Season 2</option>
+														<option value="33" >[#33] RRQ SENA VS EVOS ESPORTS - Sat Oct 2020 16:15 - MDL Indonesia Season 2</option>
+														<option value="32" >[#32] ONIC PRODIGY VS VICTIM ESPORT - Sat Oct 2020 13:30 - MDL Indonesia Season 2</option>
+														<option value="30" >[#30] BTR VS GFLX - Fri Oct 2020 16:00 - MPL Season 6 PLAYOFFS</option>
+														<option value="29" >[#29] ONIC VS EVOS Legends - Fri Oct 2020 13:00 - MPL Season 6 PLAYOFFS</option>
+														<option value="28" >[#28] EVOS VS RRQ - Sun Oct 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="27" >[#27] GFLX VS GEEK - Sun Oct 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="26" >[#26] EVOS VS BTR - Sat Oct 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="25" >[#25] ONIC VS GEEK - Sat Oct 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="24" >[#24] AE VS AURA - Sat Oct 2020 13:00 - MPL Regular Season 2020</option>
+														<option value="23" >[#23] AURA VS GFLX - Fri Oct 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="22" >[#22] RRQ VS AE - Fri Oct 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="21" >[#21] ONIC VS EVOS - Sun Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="20" >[#20] GFLX VS RRQ - Sun Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="19" >[#19] RRQ VS BTR - Sat Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="18" >[#18] AE VS EVOS - Sat Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="17" >[#17] GEEK VS AURA - Sat Sep 2020 13:00 - MPL Regular Season 2020</option>
+														<option value="16" >[#16] BTR VS ONIC - Fri Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="15" >[#15] GFLX VS AE - Fri Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="14" >[#14] EVOS VS GFLX - Sun Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="13" >[#13] BTR VS GEEK - Sun Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="12" >[#12] ONIC VS AE - Sat Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="11" >[#11] RRQ VS AURA - Sat Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="10" >[#10] EVOS VS GEEK - Sat Sep 2020 13:00 - MPL Regular Season 2020</option>
+														<option value="9" >[#9] AURA VS BTR - Fri Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="8" >[#8] GFLX VS ONIC - Fri Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="7" >[#7] RRQ VS ONIC - Sun Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="6" >[#6] AURA VS EVOS - Sun Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="5" >[#5] AE VS BTR - Sat Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="4" >[#4] RRQ VS GEEK - Sat Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="3" >[#3] ONIC VS AURA - Sat Sep 2020 13:00 - MPL Regular Season 2020</option>
+														<option value="2" >[#2] GEEK VS AE - Fri Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="1" >[#1] BTR VS GFLX - Fri Sep 2020 15:30 - MPL Regular Season 2020</option>
+							                        </select>
+                    </div>
+		      	</div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Cancel</button>
+		        	<button type="button" class="btn btn-sm btn-primary btn-sbmt-epbyid">Go</a>
+		      	</div>
+    		</div>
+	  	</div>
+	</div>
+
+	<div class="modal" tabindex="-1" role="dialog" id="event-betters-select-modal">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+		      	<div class="modal-header">
+		        	<h5 class="modal-title">List of Event Participants</h5>
+		        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          		<span aria-hidden="true">&times;</span>
+		        	</button>
+		      	</div>
+		      	<div class="modal-body">
+		        	<div class="form-group mb-0">
+                        <select class="form-control form-control-sm h-100" id="ep_betters_event_id">
+                            <option disabled>--- 20 most recent events ---</option>
+                            							<option value="118" >[#118] Lower Bracket Match 2: Todak vs Evos SG - Fri Jan 2021 12:45 - M2 World Championship Mobile Legends
+</option>
+														<option value="117" >[#117] Lower Bracket Match 1: 10S Gaming Frost vs Alter Ego - Fri Jan 2021 10:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="116" >[#116] FFML Season III Divisi 1: Match 4 - Sun Jan 2021 19:00 - Free Fire Master League</option>
+														<option value="114" >[#114] PUBGM GC Season 0 Finals - Thu Jan 2021 18:00 - PUBGM Global Championship</option>
+														<option value="113" >[#113] FFML Season III Divisi 1: Match 3 - Sat Jan 2021 19:00 - Free Fire Master League</option>
+														<option value="112" >[#112] Match 4: Upper Bracket – Bo3 - Omega vs RRQ - Fri Jan 2021 18:45 - M2 World Championship Mobile Legends
+</option>
+														<option value="111" >[#111] Match 3: Upper Bracket – Bo3 - Burmese Ghouls vs Bren Esports - Fri Jan 2021 16:15 - M2 World Championship Mobile Legends
+</option>
+														<option value="110" >[#110] Impunity KH vs Evos SG - Wed Jan 2021 18:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="109" >[#109] Todak vs Dreammax - Wed Jan 2021 16:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="108" >[#108] Unique Devu vs AE - Wed Jan 2021 14:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="107" >[#107] Resurgence vs 10S Gaming Frost - Wed Jan 2021 12:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="106" >[#106] Grup D – RRQ Hoshi vs EVOS SG - Tue Jan 2021 20:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="105" >[#105] Grup C – Bren Esports vs Alter Ego - Tue Jan 2021 18:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="104" >[#104] Grup D – RRQ Hoshi vs Dreammax - Tue Jan 2021 16:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="103" >[#103] Grup C – Bren Esports vs 10S Gaming Frost - Tue Jan 2021 14:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="102" >[#102] Grup D – EVOS SG vs Dreammax - Tue Jan 2021 12:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="101" >[#101] Grup C – Alter Ego vs 10S Gaming Frost - Tue Jan 2021 10:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="100" >[#100] Grup A – Burmese Ghouls vs Resurgence - Mon Jan 2021 20:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="99" >[#99] Grup B – Omega Esports vs Impunity KH - Mon Jan 2021 18:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="98" >[#98] Grup A – Resurgence vs Unique Devu - Mon Jan 2021 16:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="97" >[#97] Grup B – Todak vs Impunity KH - Mon Jan 2021 14:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="96" >[#96] Grup A – Burmese Ghouls vs Unique Devu - Mon Jan 2021 12:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="95" >[#95] Group B - Todak vs OMEGA Esports - Mon Jan 2021 10:00 - M2 World Championship Mobile Legends
+</option>
+														<option value="94" >[#94] M2 World Championship Mobile Legends - Fri Jan 2021 17:31 </option>
+														<option value="93" >[#93] PUBGM Global Championship - 20/12 - Sun Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="92" >[#92] PUBGM Global Championship - 19/12 - Sat Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="91" >[#91] PUBGM Global Championship - 18/12 - Fri Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="90" >[#90] PUBGM Global Championship - 16/12 - Wed Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="89" >[#89] PUBGM Global Championship - 15/12 - Tue Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="88" >[#88] PUBGM Global Championship - 13/12 - Sun Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="87" >[#87] PUBGM Global Championship - 12/12 - Sat Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="86" >[#86] PUBGM Global Championship - 11/12 - Fri Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="85" >[#85] PUBGM Global Championship - 09/12 - Wed Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="84" >[#84] PUBGM Global Championship - 08/12 - Tue Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="83" >[#83] PUBGM Global Championship - 07/12 - Mon Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="82" >[#82] MPLI One Esports Final - Sun Dec 2020 15:30 - MPL Invitational</option>
+														<option value="81" >[#81] PUBGM Global Championship - 06/12 - Sun Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="80" >[#80] Semifinal MPLI Burmese Ghouls VS Bren Esports - Sun Dec 2020 11:00 - MPL Invitational</option>
+														<option value="79" >[#79] Semifinal MPLI GeekFam VS AE - Sun Dec 2020 11:00 - MPL Invitational</option>
+														<option value="78" >[#78] PUBGM Global Championship - 05/12 - Sat Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="77" >[#77] PUBGM Global Championship - 04/12 - Fri Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="76" >[#76] PUBGM Global Championship - 02/12 - Wed Dec 2020 18:00 - PUBGM Global Championship</option>
+														<option value="75" >[#75] MPL Invitational Bren Esporst VS Aura PH - Sat Dec 2020 20:45 - MPL Invitational</option>
+														<option value="74" >[#74] MPL Invitational Burmese Ghouls VS Ronin Esports - Sat Dec 2020 17:30 - MPL Invitational</option>
+														<option value="73" >[#73] MPL Invitational RRQ Hoshi VS Alter Ego - Sat Dec 2020 14:15 - MPL Invitational</option>
+														<option value="72" >[#72] MPL Invitational Todak VS Geek Fam - Sat Dec 2020 11:00 - MPL Invitational</option>
+														<option value="71" >[#71] PUBGM Global Championship - 01/12 - Tue Dec 2020 17:30 - PUBGM Global Championship</option>
+														<option value="70" >[#70] PUBGM Global Championship - 28/11 - Sat Nov 2020 17:30 - PUBGM Global Championship</option>
+														<option value="69" >[#69] PUBGM Global Championship - 27/11 - Fri Nov 2020 17:30 - PUBGM Global Championship</option>
+														<option value="68" >[#68] MPL Invitational Match 4 - Day 2 - Sat Nov 2020 20:45 - MPL Invitational</option>
+														<option value="67" >[#67] MPL Invitational Match 3 - Day 2 - Sat Nov 2020 17:30 - MPL Invitational</option>
+														<option value="66" >[#66] MPL Invitational Match 2 - Day 2 - Sat Nov 2020 14:15 - MPL Invitational</option>
+														<option value="65" >[#65] MPL Invitational Match 1 - Day 2 - Sat Nov 2020 11:00 - MPL Invitational</option>
+														<option value="64" >[#64] MPLI One Esports Dec 2020 - Fri Nov 2020 00:00 </option>
+														<option value="63" >[#63] MPL Invitational Match 4 - Day 1 - Fri Nov 2020 20:45 - MPL Invitational</option>
+														<option value="62" >[#62] MPL Invitational Match 3 - Day 1 - Fri Nov 2020 17:30 - MPL Invitational</option>
+														<option value="61" >[#61] MPL Invitational Match 2 - Day 1 - Fri Nov 2020 14:15 - MPL Invitational</option>
+														<option value="60" >[#60] MPL Invitational Match 1 - Day 1 - Fri Nov 2020 11:00 - MPL Invitational</option>
+														<option value="59" >[#59] PUBGM Global Championship - 25/11 - Wed Nov 2020 18:00 - PUBGM Global Championship</option>
+														<option value="58" >[#58] PUBGM Global Championship - 24/11 - Tue Nov 2020 18:00 - PUBGM Global Championship</option>
+														<option value="57" >[#57] FreeFire Redbull Gold Grand Final - 21/11 - Sat Nov 2020 15:00 - Free Fire Red Bull Gold</option>
+														<option value="56" >[#56] FreeFire Continental Series - Sun Nov 2020 14:00 - Freefire Continental Series</option>
+														<option value="55" >[#55] FreeFire Redbull Gold Grand Final - 20/11 - Fri Nov 2020 15:00 - Free Fire Red Bull Gold</option>
+														<option value="54" >[#54] FreeFire Redbull Gold Semifinal - 15/11 - Sun Nov 2020 14:00 - Free Fire Red Bull Gold</option>
+														<option value="53" >[#53] FreeFire Redbull Gold Semifinal - 14/11 - Sat Nov 2020 14:00 - Free Fire Red Bull Gold</option>
+														<option value="52" >[#52] FreeFire Redbull Gold - 7/11 - Sat Nov 2020 14:00 - Free Fire Red Bull Gold</option>
+														<option value="51" >[#51] FreeFire Redbull Gold - 6/11 - Fri Nov 2020 14:00 - Free Fire Red Bull Gold</option>
+														<option value="50" >[#50] FreeFire Redbull Gold - 5/11 - Thu Nov 2020 14:00 - Free Fire Red Bull Gold</option>
+														<option value="49" >[#49] OMEGA VS BREN - Sun Oct 2020 17:30 - MPL Season 6 Philippines Playoffs</option>
+														<option value="48" >[#48] EXE VS ONIC - Sun Oct 2020 13:30 - MPL Season 6 Philippines Playoffs</option>
+														<option value="47" >[#47] PMPL SEA Finals S2 Day 3 - Sun Oct 2020 15:00 - PMPL SEA Finals S2</option>
+														<option value="46" >[#46] ONIC VS BREN - Sat Oct 2020 18:00 - MPL Season 6 Philippines Playoffs</option>
+														<option value="45" >[#45] EXE VS OMEGA - Sat Oct 2020 15:30 - MPL Season 6 Philippines Playoffs</option>
+														<option value="44" >[#44] PMPL SEA Finals S2 Day 2 - Sat Oct 2020 15:00 - PMPL SEA Finals S2</option>
+														<option value="43" >[#43] Suning VS Top Esports - Sun Oct 2020 17:00 - World Championship Semi Final</option>
+														<option value="42" >[#42] DAMWON Gaming VS G2 Esports - Sat Oct 2020 17:00 - World Championship Semi Final</option>
+														<option value="41" >[#41] RRQ VS AE - Sun Oct 2020 18:30 - MPL Season 6 PLAYOFFS</option>
+														<option value="40" >[#40] AE VS BTR - Sun Oct 2020 13:00 - MPL Season 6 PLAYOFFS</option>
+														<option value="39" >[#39] RRQ VS BTR - Sat Oct 2020 19:00 - MPL Season 6 PLAYOFFS</option>
+														<option value="38" >[#38] ONIC VS AE - Sat Oct 2020 16:00 - MPL Season 6 PLAYOFFS</option>
+														<option value="37" >[#37] BTR VS AE - Sat Oct 2020 13:00 - MPL Season 6 PLAYOFFS</option>
+														<option value="36" >[#36] ONIC VS RRQ - Fri Oct 2020 19:00 - MPL Season 6 PLAYOFFS</option>
+														<option value="35" >[#35] RRQ Sena VS SIREN Esports - Sun Oct 2020 15:00 - MDL Indonesia Season 2</option>
+														<option value="34" >[#34] SIREN Esports VS ONIC Prodigy - Sat Oct 2020 19:00 - MDL Indonesia Season 2</option>
+														<option value="33" >[#33] RRQ SENA VS EVOS ESPORTS - Sat Oct 2020 16:15 - MDL Indonesia Season 2</option>
+														<option value="32" >[#32] ONIC PRODIGY VS VICTIM ESPORT - Sat Oct 2020 13:30 - MDL Indonesia Season 2</option>
+														<option value="30" >[#30] BTR VS GFLX - Fri Oct 2020 16:00 - MPL Season 6 PLAYOFFS</option>
+														<option value="29" >[#29] ONIC VS EVOS Legends - Fri Oct 2020 13:00 - MPL Season 6 PLAYOFFS</option>
+														<option value="28" >[#28] EVOS VS RRQ - Sun Oct 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="27" >[#27] GFLX VS GEEK - Sun Oct 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="26" >[#26] EVOS VS BTR - Sat Oct 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="25" >[#25] ONIC VS GEEK - Sat Oct 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="24" >[#24] AE VS AURA - Sat Oct 2020 13:00 - MPL Regular Season 2020</option>
+														<option value="23" >[#23] AURA VS GFLX - Fri Oct 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="22" >[#22] RRQ VS AE - Fri Oct 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="21" >[#21] ONIC VS EVOS - Sun Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="20" >[#20] GFLX VS RRQ - Sun Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="19" >[#19] RRQ VS BTR - Sat Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="18" >[#18] AE VS EVOS - Sat Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="17" >[#17] GEEK VS AURA - Sat Sep 2020 13:00 - MPL Regular Season 2020</option>
+														<option value="16" >[#16] BTR VS ONIC - Fri Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="15" >[#15] GFLX VS AE - Fri Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="14" >[#14] EVOS VS GFLX - Sun Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="13" >[#13] BTR VS GEEK - Sun Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="12" >[#12] ONIC VS AE - Sat Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="11" >[#11] RRQ VS AURA - Sat Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="10" >[#10] EVOS VS GEEK - Sat Sep 2020 13:00 - MPL Regular Season 2020</option>
+														<option value="9" >[#9] AURA VS BTR - Fri Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="8" >[#8] GFLX VS ONIC - Fri Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="7" >[#7] RRQ VS ONIC - Sun Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="6" >[#6] AURA VS EVOS - Sun Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="5" >[#5] AE VS BTR - Sat Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="4" >[#4] RRQ VS GEEK - Sat Sep 2020 15:30 - MPL Regular Season 2020</option>
+														<option value="3" >[#3] ONIC VS AURA - Sat Sep 2020 13:00 - MPL Regular Season 2020</option>
+														<option value="2" >[#2] GEEK VS AE - Fri Sep 2020 18:30 - MPL Regular Season 2020</option>
+														<option value="1" >[#1] BTR VS GFLX - Fri Sep 2020 15:30 - MPL Regular Season 2020</option>
+							                        </select>
+                    </div>
+		      	</div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Cancel</button>
+		        	<button type="button" class="btn btn-sm btn-primary btn-sbmt-epbtrbyid">Go</a>
+		      	</div>
+    		</div>
+	  	</div>
+	</div>
+
+	<div class="modal" tabindex="-1" role="dialog" id="search-user-by-username">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+		      	<div class="modal-header">
+		        	<h5 class="modal-title">Search member</h5>
+		        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          		<span aria-hidden="true">&times;</span>
+		        	</button>
+		      	</div>
+		      	<div class="modal-body">
+		        	<div class="row">
+		        		<div class="col-8 pr-0">
+		        			<div class="form-group">
+		        			    <input type="text" class="form-control form-control-sm first-focus search-by-username-modal-input" placeholder="enter your search">
+		        			</div>
+		        		</div>
+		        		<div class="col-4">
+		        			<div class="form-group">
+		        			    <select class="form-control form-control-sm search-by-type-modal-input">
+		        			    	<option value="username" selected>Username</option>
+		        			    	<option value="email">Email</option>
+		        			    	<option value="phone">Phone</option>
+	        			        </select>
+		        			</div>
+		        		</div>
+		        		<div class="col-12">
+		        			<div class="form-group">
+		        			    <button type="button" class="btn btn-sm btn-primary btn-block has-spinner user-search-by-username-btn">
+		        			        <div class="info-container"><i data-feather="search" class="btn-icon left"></i>Search</div>
+		        			        <div class="spinner-container">
+		        			            <div class="spinner-border"></div>
+		        			        </div>
+		        			    </button>
+		        			</div>
+		        		</div>
+		        	</div>
+		        	<div class="user-result-table-container d-none">
+		        		<table class="table table-sm table-bordered table-hover w-100">
+		        		    <thead>
+		        		        <tr>
+		        		            <th class="w-10">[ID]</th>
+		        		            <th>Username</th>
+		        		        </tr>
+		        		    </thead>
+		        		    <tbody>
+		        		        <tr>
+		        		        	<td><span class="o3 mr-1">[55423]</span></td>
+		        		        	<td>
+		        		        		<div class="btn-group" role="group">
+		        		        		    <a href="#" data-toggle="dropdown" class="user-drop"><i data-feather="arrow-down-right" class="user-more left"></i><span>fjahja</span><br><span class="o3 black"><em>ferdianjahja@gmail.com</em></span></a>
+		        		        		    <div class="dropdown-menu">
+		        		        		        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#member-stats">View quick stats</a>
+		        		        		        <a class="dropdown-item" href="/admin2/member-view">View page</a>
+		        		        		        <a class="dropdown-item" href="#">View LP transactions</a>
+		        		        		        <a class="dropdown-item" href="#">View all bets</a>
+		        		        		        <a class="dropdown-item" href="#">View all topups</a>
+		        		        		        <a class="dropdown-item" href="/admin2/member-historical">View historical</a>
+		        		        		    </div>
+		        		        		</div>
+		        		        	</td>
+		        		        </tr>
+		        		    </tbody>
+		        		</table>
+		        		<p class="o5"><em>Showing maximum 10 results. Refine your search if the user is not found.</em></p>
+		        	</div>
+		      	</div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+		      	</div>
+    		</div>
+	  	</div>
+	</div>
+	
+</section>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://127.0.0.1:8000/admin2/vendors/jquery/jquery.min.js"></script>
+	<script src="http://127.0.0.1:8000/admin2/bootstrap/js/popper.min.js"></script>
+	<script src="http://127.0.0.1:8000/admin2/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- feathericons -->
+    <script src="http://127.0.0.1:8000/admin2/vendors/feathericons/feathericons.js"></script>
+
+    <!-- Scripts for ALL pages -->
+    <script type="text/javascript">
+    function convertToRupiah(angka) {
+        var rupiah = '';
+        var angkarev = angka.toString().split('').reverse().join('');
+        for (var i = 0; i < angkarev.length; i++) if (i % 3 == 0) rupiah += angkarev.substr(i, 3) + ',';
+        return rupiah.split('', rupiah.length - 1).reverse().join('');
+    }
+
+    function convertToDecimalFormat(angka) {
+        var rupiah = '';
+        var angkarev = angka.toString().split('').reverse().join('');
+        for (var i = 0; i < angkarev.length; i++) if (i % 3 == 0) rupiah += angkarev.substr(i, 3) + ',';
+        return rupiah.split('', rupiah.length - 1).reverse().join('');
+    }
+
+    function convertToAngka(rupiah) {
+        return parseInt(rupiah.replace(/,.*|[^0-9]/g, ''), 10);
+    }
+
+        // spinners
+        function spinnerOnClick(obj,dbFunction,duration){
+            obj.addClass('loading');
+            setTimeout(function() {
+                dbFunction(obj);
+            }, duration);  
+        }
+
+        $(document).ready(function() {
+            // ajax setup
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            // feather icons
+            feather.replace();
+
+            $("body").on('click', '.sidebar-link.has-descendants > a', function(e) {
+                e.preventDefault();
+
+                obj1 = $(this).parents('.sidebar-link');
+                obj2 = $('.sidebar-link.has-descendants');
+
+                if (!obj1.hasClass('active')) {
+                    obj2.removeClass('active');
+                    obj1.addClass('active');
+                } else {
+                    obj2.removeClass('active');
+                }
+            });
+
+            // table row behave as link
+            $("body").on('click', '.as-link', function() {
+                window.location = $(this).attr("href");
+            });
+
+            // first focus on page load
+            $('.first-focus').focus();
+
+            // modal focus first input
+            $('.modal').on('shown.bs.modal', function () {
+                $('.first-focus').focus();
+            }) 
+
+            $('body').on('click', '.btn-sbmt-epbyid', function(e) {
+                e.preventDefault();
+                var id = $('#ep_event_id').val();
+
+                var urlString = "http://127.0.0.1:8000/admin-tkmu/reports/" + id;
+                location.href = urlString;
+            })
+
+            $('body').on('click', '.btn-sbmt-epbtrbyid', function(e) {
+                e.preventDefault();
+                var id = $('#ep_betters_event_id').val();
+
+                var urlString = "http://127.0.0.1:8000/admin-tkmu/report-participants?event=" + id;
+                location.href = urlString;
+            })   
+
+            // username search modal
+            $('body').on('keypress', '.search-by-username-modal-input',function(e) {
+                if(e.which == 13) {
+                    $('.user-search-by-username-btn').click();
+                }
+            });
+
+            $('body').on('click', '.user-search-by-username-btn', function () {
+                spinnerOnClick($(this),searchUsernameModal,1000);
+            });
+
+            function searchUsernameModal(obj){
+                // do db work here
+                var username = $('.search-by-username-modal-input').val();
+                var type = $('.search-by-type-modal-input').val();
+                $.ajax({
+                    url: "http://127.0.0.1:8000/admin-tkmu/search?username="+username+"&type="+type,
+                    method: 'get',
+                    success: function(result) {
+                        // show table
+                        $('.user-result-table-container tbody').html(result.users)
+                        $('.user-result-table-container').removeClass('d-none');
+
+                        // refocus on input
+                        $('.search-by-username-modal-input').focus();      
+                    },
+                    complete: function (data) {
+                        obj.removeClass('loading');
+                    }
+                })
+            }  
+
+            // member quick stats modal
+            var userId = '';
+            $('#member-stats').on('shown.bs.modal', function () {
+                $('.quick-stats-container').addClass('loading');
+                $('.modal:not(.close-all)').modal('hide');
+                
+                setTimeout(function() {
+                    $.ajax({
+                        url: "http://127.0.0.1:8000/admin-tkmu/search-detail?user="+userId,
+                        method: 'get',
+                        success: function(result) {
+                            console.log(result)
+                            $('#member-stats #username').text(result.users.username);
+                            $('#member-stats #win-rate').text(result.users.win_rate+'%');
+                            $('#member-stats #total-slips').text(result.users.total_slips);
+                            $('#member-stats #win-slip').text(result.users.win_slip);
+                            $('#member-stats #regitration-date').text(result.users.registration_date);
+                            $('#member-stats #user-phone').html(result.users.phone);
+                            $('#member-stats #user-email').html(result.users.email);
+
+                            $('#member-stats #count-lp-recharge').text(result.users.count_lp_recharge);
+                            $('#member-stats #amt-lp-recharge').text(result.users.amount_lp_recharge);
+                            $('#member-stats #amt-lp').text(result.users.total_lp);
+                            $('#member-stats #amt-bp').text(result.users.total_bp);
+                            $('#member-stats #amt-coin').text(result.users.total_coin);
+
+                            $('#member-stats #view-page').attr('href', result.users.url_view_page);
+                            $('#member-stats #view-lp-transactions').attr('href', result.users.url_view_lp_transactions);
+                            $('#member-stats #view-all-bets').attr('href', result.users.url_view_all_bets);
+                            $('#member-stats #view-all-topups').attr('href', result.users.url_view_all_topups);
+                            $('#member-stats #view-historical').attr('href', result.users.url_view_historical);
+                        },
+                        complete: function (data) {
+                            $('.quick-stats-container').removeClass('loading');
+                        }
+                    })
+                }, 1000);  
+            });
+
+            $('body').on('click', '.user-detail-by-id-btn', function(e) {
+                e.preventDefault();
+
+                userId = $(this).attr('data-user');
+            })
+        });
+    </script>
+
+    <script>
+    $(document).ready(function() {
+
+        // page specific scripts
+
+    })
+</script>
+</body>
+</html>
